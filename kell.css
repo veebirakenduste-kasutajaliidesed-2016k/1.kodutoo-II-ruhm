@@ -1,0 +1,35 @@
+body {
+    background-color: #80d4ea;
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#clock{
+    height: 200px;
+    width: 700px;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    padding-top: 60px;
+    font-family: courier, monospace;
+    text-align: center;
+    color: red;
+    font-size: 100px;
+
+}
+#date{
+  height: 200px;
+  width: 700px;
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 50; right: 0;
+  padding-top: 60px;
+  font-family: courier, monospace;
+  text-align: center;
+  color: blue;
+  font-size: 100px;
+
+}
