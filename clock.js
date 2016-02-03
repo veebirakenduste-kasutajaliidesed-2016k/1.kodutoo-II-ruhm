@@ -6,8 +6,7 @@ window.onload = function(){
   writeDate();
 
   document.getElementById("clock").style.color = "red";
-
-  document.getElementById("clock").style.fontSize = "xx-large";
+  document.getElementById("clock").style.font = "normal bold 200px arial,serif";
 
   //Käivitan intervalli-500ms = 0.5 sek
   window.setInterval(function(){
@@ -21,13 +20,23 @@ window.addEventListener('keyup', function(event){
 
   if(event.which == 38){
     console.log('üles');
-    clock.style.color == "green";
+    document.getElementById("clock").style.color = "green";
     
   }
 
   if(event.which == 40){
     console.log('alla');
-    clock.style.color == "blue";
+    document.getElementById("clock").style.color = "blue";
+  }
+
+  if(event.which == 39){
+    console.log('alla');
+    document.getElementById("clock").style.color = "red";
+  }
+
+  if(event.which == 37){
+    console.log('alla');
+    document.getElementById("clock").style.color = "black";
   }
 
 });
