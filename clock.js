@@ -4,8 +4,8 @@ window.onload = function(){ //assign divs to variables after page has finished l
 		var sec = document.getElementById("sec");
 	setInterval(function(){ //update every second
 		var d = new Date();
-		hr.innerHTML = '<p class="clock__inner--number">'+d.getHours()+'</p>';
-		min.innerHTML = '<p class="clock__inner--number">'+d.getMinutes()+'</p>';
-		sec.innerHTML = '<p class="clock__inner--number">'+d.getSeconds()+'</p>';
+		hr.innerHTML = '<p class="clock__number--nopadding">'+d.getHours()+'</p>';
+		min.innerHTML = '<p class="clock__number--nopadding">'+d.getMinutes()+'</p>';
+		sec.innerHTML = '<p class="clock__number--nopadding">'+d.getSeconds()+'</p>';
 	},1000);
 }

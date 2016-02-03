@@ -10,7 +10,7 @@ html,body{ margin:0; padding:0; height:100%; width:100%; font-family: 'Raleway',
     top: 50%;
     transform: translateY(-50%);
 }
-.clock__inner{
+.clock__number{
 	text-align:center;
 	width: 60px;
     margin: 0 auto;
@@ -18,7 +18,7 @@ html,body{ margin:0; padding:0; height:100%; width:100%; font-family: 'Raleway',
     color: white;
     font-size: 30px;
 }
-.clock__inner--number{
+.clock__number--nopadding{
 	padding:0;
 	margin:0;
 }
