@@ -4,6 +4,7 @@ window.onload = function(){
   var clock = document.getElementById('clock');
   //Et ei oleks näha 00:00:00
   writeDate();
+  document.getElementById("clock").style.color = "red";
 
   //Käivitan intervalli-500ms = 0.5 sek
   window.setInterval(function(){
@@ -12,6 +13,18 @@ window.onload = function(){
   }, 500);
 
 };
+
+window.addEventListener('keyup', function(event)){
+
+  if(event.onkeyup == 38){
+    clock.fontsize
+  }
+
+  if(event.onkeyup == 40){
+    clock.fontsize
+  }
+
+});
 // Võtab aja ja kirjutab clock elemendi sisse
 function writeDate(){
 
