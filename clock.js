@@ -41,16 +41,19 @@ window.addEventListener('keyup', function(event){
 
 });
 
+
+
 // Võtab aja ja kirjutab clock elemendi sisse
 function writeDate(){
 
   var today = new Date();
-
+  
+  var day = today.getDay();
   var hours = today.getHours();
   var minutes = today.getMinutes();
   var seconds = today.getSeconds();
 
-  clock.innerHTML = addZeroBefore(hours) + ':' + addZeroBefore(minutes) + ':' + addZeroBefore(seconds);
+  clock.innerHTML = day + ':' + addZeroBefore(hours) + ':' + addZeroBefore(minutes) + ':' + addZeroBefore(seconds);
 
 }
 
