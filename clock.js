@@ -1,15 +1,24 @@
 window.onload = function(){
-
-var clock= document.getElementById("clock");
+var clock= document.getElementById("clock").style.color = "yellow";
 
 
 
     //käivitan intervalli/500= 500 millisekundit = 0,5s
-          writeDate();//et ära peita 0:0:0
+        writeDate();//et ära peita 0:0:0
     window.setInterval(function(){
-          writeDate();
+        writeDate();
     }, 500);
 
+
+    window.addEventListener('keyup', function(event){
+     document.getElementById("clock").style.color = "red";
+     if(event.which == 13){
+
+       document.getElementById("clock").style.color = "yellow";
+     }
+     });
+     document.body.style.background = "darkblue";
+     document.body.style.backgroundAttachment = "center";
 };
 
 //võtab aja ja kirjutab aja clock elemendi sisse
@@ -33,4 +42,8 @@ function writeDate(){
 }
 
    return number;
+ }
+
+ function event() {
+
  }
