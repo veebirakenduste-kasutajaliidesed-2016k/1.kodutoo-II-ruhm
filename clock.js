@@ -15,10 +15,14 @@ var clock= document.getElementById("clock");
 //võtab aja ja kirjutab aja clock elemendi sisse
 function writeDate(){
   var today = new Date();
+  var days = ["Pühapäev","Esmaspäev","Teisipäev","Kolmapäev","Neljapäev","Reede","Laupäev"];
+  var year=today.getFullYear();
+  var day =today.getDate();
   var hours= today.getHours("H");
   var minutes= today.getMinutes("Min");
   var seconds = today.getSeconds("Sec");
-  clock.innerHTML = addZeroBefore(hours) + ":" +addZeroBefore(minutes)+":"+addZeroBefore(seconds);
+  clock.innerHTML = addZeroBefore(hours) + ":" +addZeroBefore(minutes)+":"+addZeroBefore(seconds)+" <br> "+day+"."+ days[today.getDay()]+"."+year;
+
 
 }
  function addZeroBefore(number){
