@@ -4,7 +4,10 @@ window.onload = function(){
   var clock = document.getElementById('clock');
   //Et ei oleks näha 00:00:00
   writeDate();
+
   document.getElementById("clock").style.color = "red";
+
+  document.getElementById("clock").style.fontSize = "xx-large";
 
   //Käivitan intervalli-500ms = 0.5 sek
   window.setInterval(function(){
@@ -14,17 +17,21 @@ window.onload = function(){
 
 };
 
-window.addEventListener('keyup', function(event)){
+window.addEventListener('keyup', function(event){
 
-  if(event.onkeyup == 38){
-    clock.fontsize
+  if(event.which == 38){
+    console.log('üles');
+    clock.style.color == "green";
+    
   }
 
-  if(event.onkeyup == 40){
-    clock.fontsize
+  if(event.which == 40){
+    console.log('alla');
+    clock.style.color == "blue";
   }
 
 });
+
 // Võtab aja ja kirjutab clock elemendi sisse
 function writeDate(){
 
