@@ -6,7 +6,7 @@ window.onload = function(){
   writeDate();
 
   document.body.style.backgroundColor = "yellow";
-  document.getElementById("clock").style = "color: red; text-align: center; width: 100%";
+  document.getElementById("clock").style = "color: red; text-align: center; vertical-align: middle; width: 100%";
   document.getElementById("clock").style.fontSize = "500%";
   //Käivitan intervalli-500ms = 0.5 sek
   window.setInterval(function(){
