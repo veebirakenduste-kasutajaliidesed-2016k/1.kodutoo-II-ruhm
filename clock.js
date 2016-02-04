@@ -2,6 +2,7 @@
 window.onload = function(){
 
   var clock = document.getElementById('clock');
+  var fontSize = 30;
   writeDate();//selleks et lehe laadimisel oleks kohe kell näha
   //käivitan invervalli
   window.setInterval(function(){
@@ -39,12 +40,13 @@ window.onload = function(){
    });
 
    window.addEventListener('wheel', function(event){
-      console.log(event.deltaY);
       if(event.deltaY == 100){
-        document.getElementById("clock").style.fontSize = "40px";
+        fontSize = fontSize - 10;
+        document.getElementById("clock").style.fontSize = fontSize + 'px';
       }
       if(event.deltaY == -100){
-        document.getElementById("clock").style.fontSize = "20px";
+        fontSize = fontSize + 10;
+        document.getElementById("clock").style.fontSize = fontSize + 'px';
       }
     });
 
