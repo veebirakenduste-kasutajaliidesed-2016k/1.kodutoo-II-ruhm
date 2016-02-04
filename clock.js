@@ -38,6 +38,16 @@ window.onload = function(){
      }
    });
 
+   window.addEventListener('wheel', function(event){
+      console.log(event.deltaY);
+      if(event.deltaY == 100){
+        document.getElementById("clock").style.fontSize = "40px";
+      }
+      if(event.deltaY == -100){
+        document.getElementById("clock").style.fontSize = "20px";
+      }
+    });
+
    //muudab tausta värvi
    window.addEventListener('click', function(event){
       console.log(event.which);
