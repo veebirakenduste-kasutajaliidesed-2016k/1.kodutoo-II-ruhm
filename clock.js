@@ -4,10 +4,10 @@ window.onload = function(){
   var clock = document.getElementById('clock');
   //Et ei oleks näha 00:00:00
   writeDate();
-  document.body.style.backgroundColor = "yellow";
-  document.getElementById("clock").style.color = "red";
-  document.getElementById("clock").style.fontSize = "50px";
 
+  document.body.style.backgroundColor = "yellow";
+  document.getElementById("clock").style = "color: red; text-align: center; width: 100%";
+  document.getElementById("clock").style.fontSize = "500%";
   //Käivitan intervalli-500ms = 0.5 sek
   window.setInterval(function(){
     //Iga 500ms tagant refresh põhimõtteliselt
@@ -20,13 +20,15 @@ document.write("Autor: Kevin Münter")
 window.addEventListener('keyup', function(event){
 
   if(event.which == 107){
-    console.log('Pluss');
-    document.getElementById("clock").style.fontSize = "80px";
+    document.getElementById("clock").style.fontSize = "800%";
   }
 
   if(event.which == 109){
-    console.log('Miinus');
-    document.getElementById("clock").style.fontSize = "20px";
+    document.getElementById("clock").style.fontSize = "200%";
+  }
+
+  if(event.which == 35){
+    document.getElementById("clock").style.fontSize = "500%";
   }
 
 
