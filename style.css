@@ -2,23 +2,45 @@ html,body{ margin:0; padding:0; height:100%; width:100%; font-family: 'Raleway',
 .container{
 	width:100%;
 	height:100%;
+	position: relative;
+	background-color:#FAFAFA;
 }
 .clock{
+    width: 80%;
+    padding: 40px 0px 40px 0px;
 	position: absolute;
-	width:100%;
-    margin: 0 auto;
-    top: 50%;
-    transform: translateY(-50%);
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align:center;
+	background-color:#FFFFFF;
+	color:rgba(0,0,0,0.87);
+	font-size: 30px;
+	-webkit-box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.50);
+	-moz-box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.50);
+	box-shadow: 0px 5px 30px 0px rgba(0,0,0,0.50);
 }
 .clock__number{
-	text-align:center;
-	width: 60px;
-    margin: 0 auto;
-    background-color: black;
-    color: white;
-    font-size: 30px;
+    display:inline-block;
 }
 .clock__number--nopadding{
 	padding:0;
 	margin:0;
+}
+.btn{
+	display:block;
+	width:56px;
+	height:56px;
+	background-color:#448AFF;
+	border-radius:56px;
+	text-align:center;
+	line-height:56px;
+	position:absolute;
+	z-index:1;
+	left:10px;
+	top:122px;
+	font-size:40px;
+	-webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.31);
+	-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.31);
+	box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.31);
 }
