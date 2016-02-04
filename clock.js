@@ -13,6 +13,7 @@ window.onload = function(){
     console.log(event.x);
   });*/
 
+  //kella värv
   clock.addEventListener('click', setInterval(function(){
       var num_clock = getRandomInt(1, 5);
       if (num_clock == 1){
@@ -79,16 +80,16 @@ window.onload = function(){
 //võtab aja ja kirjutab #clock elemendi sisse
 function writeDate(){
 
-  var date = new Date();
-  var hour = date.getHours();
-  var min = date.getMinutes();
-  var sec = date.getSeconds();
-  var day = date.getDate();
-  var month = date.getMonth();
-  var year = date.getFullYear();
+  var d = new Date();
+  var hour = d.getHours();
+  var min = d.getMinutes();
+  var sec = d.getSeconds();
+  var day = d.getDate();
+  var month = d.getMonth();
+  var year = d.getFullYear();
 
   //#clock element htmli
-  clock.innerHTML=addZeroBefore(hour)+":"+addZeroBefore(min)+":"+addZeroBefore(sec)+"<br><br>"+addZeroBefore(day)+"."+addZeroBefore(month+1)+"."+year;
+  clock.innerHTML=addZeroBefore(hour)+":"+addZeroBefore(min)+":"+addZeroBefore(sec)+'<br>'+addZeroBefore(day)+"."+addZeroBefore(month+1)+"."+year;
 }
 
 function addZeroBefore(number){
