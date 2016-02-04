@@ -79,13 +79,16 @@ window.onload = function(){
 //võtab aja ja kirjutab #clock elemendi sisse
 function writeDate(){
 
-  var d = new Date();
-  var h = d.getHours();
-  var m = d.getMinutes();
-  var s = d.getSeconds();
+  var date = new Date();
+  var hour = date.getHours();
+  var min = date.getMinutes();
+  var sec = date.getSeconds();
+  var day = date.getDate();
+  var month = date.getMonth();
+  var year = date.getFullYear();
 
   //#clock element htmli
-  clock.innerHTML=addZeroBefore(h)+":"+addZeroBefore(m)+":"+addZeroBefore(s);
+  clock.innerHTML=addZeroBefore(hour)+":"+addZeroBefore(min)+":"+addZeroBefore(sec)+"<br><br>"+addZeroBefore(day)+"."+addZeroBefore(month+1)+"."+year;
 }
 
 function addZeroBefore(number){
