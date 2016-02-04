@@ -13,7 +13,24 @@ window.onload = function(){
   });
 
   clock.addEventListener('click', function(event){
-      document.getElementById("clock").style.color = "red";
+      if(event.which){
+        var num = getRandomInt(1, 5);
+        if (num == 1){
+          document.getElementById("clock").style.color = "red";
+        }
+        if (num == 2){
+          document.getElementById("clock").style.color = "blue";
+        }
+        if (num == 3){
+          document.getElementById("clock").style.color = "green";
+        }
+        if (num == 4){
+          document.getElementById("clock").style.color = "yellow";
+        }
+        if (num == 5){
+          document.getElementById("clock").style.color = "black";
+        }
+      }
   });
 
   window.addEventListener('keyup', function(event){
@@ -41,7 +58,7 @@ window.onload = function(){
           document.body.style.backgroundColor = "yellow";
         }
         if (num == 5){
-          document.body.style.backgroundColor = "brown";
+          document.body.style.backgroundColor = "black";
         }
       }
     });
