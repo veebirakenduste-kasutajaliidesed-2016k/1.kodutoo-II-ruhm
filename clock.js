@@ -12,26 +12,24 @@ window.onload = function(){
     console.log(event.x);
   });
 
-  clock.addEventListener('click', function(event){
-      if(event.which){
-        var num = getRandomInt(1, 5);
-        if (num == 1){
-          document.getElementById("clock").style.color = "red";
-        }
-        if (num == 2){
-          document.getElementById("clock").style.color = "blue";
-        }
-        if (num == 3){
-          document.getElementById("clock").style.color = "green";
-        }
-        if (num == 4){
-          document.getElementById("clock").style.color = "yellow";
-        }
-        if (num == 5){
-          document.getElementById("clock").style.color = "black";
-        }
+  clock.addEventListener('click', setInterval(function(){
+      var num_clock = getRandomInt(1, 5);
+      if (num_clock == 1){
+        document.getElementById("clock").style.color = "red";
       }
-  });
+      if (num_clock == 2){
+        document.getElementById("clock").style.color = "blue";
+      }
+      if (num_clock == 3){
+        document.getElementById("clock").style.color = "green";
+      }
+      if (num_clock == 4){
+        document.getElementById("clock").style.color = "yellow";
+      }
+      if (num_clock == 5){
+        document.getElementById("clock").style.color = "black";
+      }
+  }, 500));
 
   window.addEventListener('keyup', function(event){
      console.log(event.which);
@@ -44,20 +42,20 @@ window.onload = function(){
    window.addEventListener('click', function(event){
       console.log(event.which);
       if(event.which){
-        var num = getRandomInt(1, 5);
-        if (num == 1){
+        var num_backg = getRandomInt(1, 5);
+        if (num_backg == 1){
           document.body.style.backgroundColor = "red";
         }
-        if (num == 2){
+        if (num_backg == 2){
           document.body.style.backgroundColor = "blue";
         }
-        if (num == 3){
+        if (num_backg == 3){
           document.body.style.backgroundColor = "green";
         }
-        if (num == 4){
+        if (num_backg== 4){
           document.body.style.backgroundColor = "yellow";
         }
-        if (num == 5){
+        if (num_backg == 5){
           document.body.style.backgroundColor = "black";
         }
       }
