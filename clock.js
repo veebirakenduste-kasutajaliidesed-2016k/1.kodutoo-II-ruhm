@@ -48,12 +48,14 @@ function writeDate(){
 
   var today = new Date();
   
-  var day = today.getDay();
+  var day = today.getDate();
+  var year = today.getFullYear();
+  var month = today.getMonth();
   var hours = today.getHours();
   var minutes = today.getMinutes();
   var seconds = today.getSeconds();
 
-  clock.innerHTML = day + ':' + addZeroBefore(hours) + ':' + addZeroBefore(minutes) + ':' + addZeroBefore(seconds);
+  clock.innerHTML = addZeroBefore(day) + '.' + addZeroBefore(month) + '.' + year + ' ' + addZeroBefore(hours) + ':' + addZeroBefore(minutes) + ':' + addZeroBefore(seconds);
 
 }
 
