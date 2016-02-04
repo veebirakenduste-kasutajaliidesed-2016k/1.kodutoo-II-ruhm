@@ -10,10 +10,14 @@
 <body>
 	<div class="container">
 		<div class="overlay" id="overlay">
-			<div class="closebtn">X</div>
+			<div class="btn--close">X</div>
+			<div class="schemes">
+				<div id="darkscheme" class="btn--scheme">Dark</div>
+				<div id="lightscheme" class="btn--scheme">Light</div>
+			</div>
 		</div>
 		<div class="clock" id="clock">
-			<a class="btn" id="btn" onclick="showOverlay()">+</a>
+			<div class="btn" id="btn" onclick="showOverlay()">+</div>
 			<div class="clock__number" id="time"></div>
 			<div class="date" id="date"></div>
 		</div>

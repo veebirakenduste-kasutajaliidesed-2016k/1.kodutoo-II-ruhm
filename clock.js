@@ -26,7 +26,7 @@ function showOverlay() {
 	document.getElementById('overlay').classList.toggle('overlay--show');
 };
 window.onclick = function(event) {
-  if (!event.target.matches('.btn')) {
+  if (event.target.matches('.btn--close') || event.target.matches('.container')) {
     var overlay = document.getElementsByClassName("overlay");
     var i;
     for (i = 0; i < overlay.length; i++) {
