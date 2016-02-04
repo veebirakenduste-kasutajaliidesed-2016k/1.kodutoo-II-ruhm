@@ -9,8 +9,11 @@
 </head>
 <body>
 	<div class="container">
+		<div class="overlay" id="overlay">
+			<div class="closebtn">X</div>
+		</div>
 		<div class="clock" id="clock">
-			<a class="btn" id="btn">+</a>
+			<a class="btn" id="btn" onclick="showOverlay()">+</a>
 			<div class="clock__number" id="time"></div>
 			<div class="date" id="date"></div>
 		</div>
