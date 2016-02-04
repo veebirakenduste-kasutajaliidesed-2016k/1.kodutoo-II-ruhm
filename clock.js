@@ -8,15 +8,30 @@ window.onload = function(){
   document.body.style.backgroundColor = "yellow";
   document.getElementById("clock").style = "color: red; text-align: center; vertical-align: middle; width: 100%";
   document.getElementById("clock").style.fontSize = "500%";
+  document.getElementById("clock").style.fontStyle = "italic";
   //Käivitan intervalli-500ms = 0.5 sek
   window.setInterval(function(){
     //Iga 500ms tagant refresh põhimõtteliselt
     writeDate();
   }, 500);
 
+  clock.addEventListener('click', function(event){
+
+    if(event){
+      document.getElementById("clock").style.fontStyle = "normal";
+    }
+  });
+
+  clock.addEventListener('dblclick', function(event){
+
+    if(event){
+      document.getElementById("clock").style.fontStyle = "italic";
+    }
+  });
 };
 
 document.write("Autor: Kevin Münter")
+
 window.addEventListener('keyup', function(event){
 
   if(event.which == 107){
