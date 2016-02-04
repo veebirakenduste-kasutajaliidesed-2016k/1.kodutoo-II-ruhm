@@ -5,8 +5,9 @@ window.onload = function(){
   //Et ei oleks näha 00:00:00
   writeDate();
 
+
   document.getElementById("clock").style.color = "red";
-  document.getElementById("clock").style.font = "normal bold 200px arial,serif";
+  document.getElementById("clock").style.fontSize = "300%"
 
   //Käivitan intervalli-500ms = 0.5 sek
   window.setInterval(function(){
@@ -16,26 +17,38 @@ window.onload = function(){
 
 };
 
+document.write("Kevin Münter")
+window.addEventListener('keyup', function(event){
+
+  if(event.which == 107){
+    console.log('Pluss');
+    document.getElementById("clock").style.fontSize = document.getElementById("clock").style.fontSize + "5";
+  }
+
+  if(event.which == 109){
+    console.log('Miinus');
+    document.getElementById("clock").style.fontSize = document.getElementById("clock").style.fontSize - "5";
+  }
+
+
+});
+
 window.addEventListener('keyup', function(event){
 
   if(event.which == 38){
-    console.log('üles');
     document.getElementById("clock").style.color = "green";
     
   }
 
   if(event.which == 40){
-    console.log('alla');
     document.getElementById("clock").style.color = "blue";
   }
 
   if(event.which == 39){
-    console.log('alla');
     document.getElementById("clock").style.color = "red";
   }
 
   if(event.which == 37){
-    console.log('alla');
     document.getElementById("clock").style.color = "black";
   }
 
@@ -54,6 +67,8 @@ function writeDate(){
   var hours = today.getHours();
   var minutes = today.getMinutes();
   var seconds = today.getSeconds();
+
+  //Kuupäeva õpetuse sain siit- http://www.w3schools.com/js/js_date_methods.asp
 
   clock.innerHTML = addZeroBefore(day) + '.' + addZeroBefore(month) + '.' + year + ' ' + addZeroBefore(hours) + ':' + addZeroBefore(minutes) + ':' + addZeroBefore(seconds);
 
