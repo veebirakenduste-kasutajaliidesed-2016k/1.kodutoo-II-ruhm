@@ -4,10 +4,9 @@ window.onload = function(){
   var clock = document.getElementById('clock');
   //Et ei oleks näha 00:00:00
   writeDate();
-
-
+  document.body.style.backgroundColor = "yellow";
   document.getElementById("clock").style.color = "red";
-  document.getElementById("clock").style.fontSize = "300%"
+  document.getElementById("clock").style.fontSize = "50px";
 
   //Käivitan intervalli-500ms = 0.5 sek
   window.setInterval(function(){
@@ -17,17 +16,17 @@ window.onload = function(){
 
 };
 
-document.write("Kevin Münter")
+document.write("Autor: Kevin Münter")
 window.addEventListener('keyup', function(event){
 
   if(event.which == 107){
     console.log('Pluss');
-    document.getElementById("clock").style.fontSize = document.getElementById("clock").style.fontSize + "5";
+    document.getElementById("clock").style.fontSize = "80px";
   }
 
   if(event.which == 109){
     console.log('Miinus');
-    document.getElementById("clock").style.fontSize = document.getElementById("clock").style.fontSize - "5";
+    document.getElementById("clock").style.fontSize = "20px";
   }
 
 
@@ -37,19 +36,23 @@ window.addEventListener('keyup', function(event){
 
   if(event.which == 38){
     document.getElementById("clock").style.color = "green";
-    
+    document.body.style.backgroundColor = "red";
+
   }
 
   if(event.which == 40){
     document.getElementById("clock").style.color = "blue";
+    document.body.style.backgroundColor = "green";
   }
 
   if(event.which == 39){
     document.getElementById("clock").style.color = "red";
+    document.body.style.backgroundColor = "blue";
   }
 
   if(event.which == 37){
     document.getElementById("clock").style.color = "black";
+    document.body.style.backgroundColor = "yellow";
   }
 
 });
@@ -60,7 +63,7 @@ window.addEventListener('keyup', function(event){
 function writeDate(){
 
   var today = new Date();
-  
+
   var day = today.getDate();
   var year = today.getFullYear();
   var month = today.getMonth();
@@ -70,9 +73,10 @@ function writeDate(){
 
   //Kuupäeva õpetuse sain siit- http://www.w3schools.com/js/js_date_methods.asp
 
-  clock.innerHTML = addZeroBefore(day) + '.' + addZeroBefore(month) + '.' + year + ' ' + addZeroBefore(hours) + ':' + addZeroBefore(minutes) + ':' + addZeroBefore(seconds);
+  clock.innerHTML = addZeroBefore(day) + '.' + addZeroBefore(month + 1) + '.' + year + ' ' + addZeroBefore(hours) + ':' + addZeroBefore(minutes) + ':' + addZeroBefore(seconds);
 
 }
+
 
 function addZeroBefore(number){
 
