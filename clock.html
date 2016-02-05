@@ -2,25 +2,27 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Kell</title>
+	<title>Clock</title>
 	<link rel="stylesheet" href="style.css">
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-
 </head>
 <body>
 	<div class="container">
-		<div class="overlay" id="overlay">
-			<div class="btn--close">X</div>
-			<div class="schemes">
-				<div id="darkscheme" class="btn--scheme">Dark</div>
-			</div>
-		</div>
 		<div class="clock" id="clock">
-			<div class="btn" id="btn" onclick="showOverlay()">+</div>
+			<div class="btn btn--overlay">+</div>
 			<div class="clock__number" id="time"></div>
 			<div class="date" id="date"></div>
 		</div>
+		<div class="overlay" id="overlay">
+			<div class="overlay__options">
+				<div class="btn btn--close">X</div>
+				<div class="schemes">
+					<p>Color scheme:</p>
+					<a id="darkscheme" class="btn btn--scheme">Dark</a>
+				</div>
+			</div>
+		</div>
 	</div>	
-</body>
 <script src="clock.js"></script>
+</body>
 </html>

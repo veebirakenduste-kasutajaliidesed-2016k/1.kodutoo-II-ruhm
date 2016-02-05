@@ -1,153 +1,158 @@
-html,body{ margin:0; padding:0; height:100%; width:100%; font-family: 'Raleway', sans-serif;}
-.container{
-	width:100%;
-	height:100%;
-	position: relative;
-	background-color:#FAFAFA;
+html,
+body {
+	height: 100%;
+    width: 100%;
+    padding: 0;  
+    margin: 0; 
+	font-family: 'Raleway', sans-serif;
+	color: rgba(0, 0, 0, 0.87);
 }
-.clock{
-    width: 80%;
-    padding: 40px 0px 40px 0px;
+
+.container {
+	position: relative;  
+	height: 100%;
+    width: 100%;
+    background-color: #FAFAFA;
+}
+
+.clock {
 	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	text-align:center;
-	background-color:#FFFFFF;
-	color:rgba(0,0,0,0.87);
+    padding: 40px 0px 40px 0px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    width: 80%;
+	background-color: #FFFFFF;
 	font-size: 30px;
-	-webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.31);
-	-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.31);
-	box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.31);
-}
-.clock__number{
-    display:inline-block;
-}
-.clock__number--nopadding{
-	padding:0;
-	margin:0;
-}
-.btn{
-	display:block;
-	width:56px;
-	height:56px;
-	background-color:#448AFF;
-	border-radius:56px;
-	text-align:center;
-	line-height:56px;
-	position:absolute;
-	z-index:1;
-	left:10px;
-	top:122px;
-	font-size:40px;
-	-webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
-	-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
-	box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
-	color:#FFFFFF;
-	animation: pulseout 0.5s ease-in;
-}
-.btn:hover{
-	cursor:pointer;
-	background-color:#2962FF;
-	animation: pulsein 0.5s ease-in;
-}
-.overlay{
-	width:80%;
-	height:80%;
-	z-index:3;
-	position:absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background-color:#FFFFFF;
-	display:none;
-	-webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.31);
-	-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.31);
-	box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.31);
-	animation:appear 0.2s ease-out;
-}
-.overlay--show{
-	display:block;
-}
-.btn--close{
-	height:28px;
-	width:28px;
-	border-radius:28px;
-	background-color:#FF3D00;
-	position:absolute;
-	line-height:28px;
-	top:-14px;
-	right:-14px;
-	color:#FFFFFF;
     text-align: center;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.31);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.31);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.31);    
+}
+
+.clock__number {
+    display: inline-block;
+}
+
+.btn {
+	z-index: 1;
+    text-align: center;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn--overlay {
+    position: absolute;
+    left: 10px;
+    top: 122px;
+    width: 56px;
+    height: 56px;
+    font-size: 40px;
+    background-color: #448AFF;
+    line-height: 56px;
+    color: #FFFFFF;
+    border-radius: 56px;
+    transition: background-color 1s;
+}
+
+.btn--overlay:hover {
+    background-color: #2962FF;
+}
+
+.btn--close {
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    top: -14px;
+    right: -14px;
+    border-radius: 28px;
+    background-color: #FF3D00;
+    line-height: 28px;
+    color: #FFFFFF;
     font-weight: bolder;
     font-size: 20px;
-    cursor:pointer;
-    -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.31);
-	-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.31);
-	box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.31);
+    cursor: pointer;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.31);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.31);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.31);
+    transition: background-color 1s;
 }
-.btn--close:hover{
-	background-color:#DD2C00
+
+.btn--close:hover {
+    background-color: #DD2C00
 }
-.btn--scheme{
-	display:inline-block;
-	width:100px;
-	height:100px;
-	background-color:#FFFFFF;
-	text-align:center;
-	line-height:100px;
-	z-index:1;
-	font-size:40px;
-	-webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
-	-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
-	box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
-	color:rgba(0,0,0,0.87);
+
+.btn--scheme {
+    display: inline-block;
+    background-color: #FFFFFF;
+    text-align: center;
+    line-height: 100px;
+    z-index: 1;
+    font-size: 40px;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
 }
-.disappear{
-	animation:disappear 0.2s ease-out;
+
+.overlay {
+	display: none;
+	width: 100%;
+    height: 100%;
+    animation: appear 0.2s ease-out;
+    background-color: rgba(0,0,0,0.31);
 }
-.schemes{
+
+.overlay.is-visible {
+    display: block;
+}
+
+.overlay.disappear {
+    animation: disappear 0.2s ease-out;
+}
+.overlay__options{
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80%;
+    height: 80%;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.31);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.31);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.31);
+}
+
+.schemes {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    width:80%;
 }
-
-
-
 
 
 /*ANIMATION*/
-@keyframes pulsein {
-  0% {
-    background-color: #448AFF;
-  }
-  100% {
-    background-color: #2962FF;
-  }
-}
-@keyframes pulseout {
-  0% {
-    background-color: #2962FF;
-  }
-  100% {
-    
-    background-color: #448AFF;
-  }
-}
+
 @keyframes appear {
-	0%{
-		opacity:0;
-	}
-	100%{
-		opacity:1;
-	}
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
-@keyframes disappear{
-	0%{
-		opacity:1;
-	}
-	100%{
-		opacity:0;
-	}
+
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
