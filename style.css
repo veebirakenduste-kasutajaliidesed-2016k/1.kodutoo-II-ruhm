@@ -94,7 +94,7 @@ html,body{ margin:0; padding:0; height:100%; width:100%; font-family: 'Raleway',
 	display:inline-block;
 	width:100px;
 	height:100px;
-	background-color:#448AFF;
+	background-color:#FFFFFF;
 	text-align:center;
 	line-height:100px;
 	z-index:1;
@@ -102,13 +102,16 @@ html,body{ margin:0; padding:0; height:100%; width:100%; font-family: 'Raleway',
 	-webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
 	-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
 	box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.5);
-	color:#FFFFFF;
-	animation: pulseout 0.5s ease-in;
+	color:rgba(0,0,0,0.87);
 }
 .disappear{
 	animation:disappear 0.2s ease-out;
 }
-
+.schemes{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 
 
