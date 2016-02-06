@@ -1,0 +1,97 @@
+
+
+div.circle_2 {
+  border: 5px solid black;
+  border-radius: 50%;
+  width: 500px; height: 500px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: yellow;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+div.circle_1 {
+  border: 5px solid black;
+  border-radius: 50%;
+  width: 600px; height: 600px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+}
+
+div.clock{
+  font-family: "Tahoma", Geneva, sans-serif;
+  font-weight: bold;
+  font-size: 98px;
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div.ear_1{
+  border: 5px solid black;
+  height: 150px;
+  width: 250px;
+  border-radius: 250px 250px 75px 75px;
+  -moz-border-radius: 250px 250px 75px 75px;
+  -webkit-border-radius: 250px 250px 75px 75px;
+  background: red;
+  position: absolute;
+  top: 8%;
+  left: 20%;
+  transform: rotate(-50deg);
+
+}
+
+div.ear_2{
+  border: 5px solid black;
+  height: 150px;
+  width: 250px;
+  border-radius: 250px 250px 75px 75px;
+  -moz-border-radius: 250px 250px 75px 75px;
+  -webkit-border-radius: 250px 250px 75px 75px;
+  background: red;
+  position: absolute;
+  top: 8%;
+  left: 63%;
+  transform: rotate(50deg);
+}
+
+div.leg_1{
+  border: 5px solid black;
+  height: 70px;
+  width: 100px;
+  border-radius: 250px 250px 75px 75px;
+  -moz-border-radius: 250px 250px 75px 75px;
+  -webkit-border-radius: 250px 250px 75px 75px;
+  background: red;
+  position: absolute;
+  top: 83%;
+  left: 62%;
+  transform: rotate(140deg);
+}
+
+div.leg_2{
+  border: 5px solid black;
+  height: 70px;
+  width: 100px;
+  border-radius: 250px 250px 75px 75px;
+  -moz-border-radius: 250px 250px 75px 75px;
+  -webkit-border-radius: 250px 250px 75px 75px;
+  background: red;
+  position: absolute;
+  top: 83%;
+  left: 31%;
+  transform: rotate(-140deg);
+}

@@ -2,6 +2,7 @@
 window.onload = function(){
   var clock = document.getElementById('clock');
 
+
   // selleks, et ei oleks näha 0:0:0-i
   writeDate();
 
@@ -14,7 +15,7 @@ window.onload = function(){
 
 };
 
-// võtab aja jakirjutab #clock elemendi sisse
+// võtab aja ja kirjutab #clock elemendi sisse
 function writeDate(){
   var today = new Date();
   var hours = today.getHours();
