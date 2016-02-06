@@ -1,0 +1,73 @@
+html, body {
+  height: 98%;
+}
+
+#canvas {
+  overflow: auto;
+  position: absolute;
+  height: 100%;
+  min-height: 100px;
+  max-height: 1020px;
+  width: 200px;
+  background-color: #f0f0f0;
+  top: 0px;
+  left: 0px;
+}
+
+#minuteclock {
+  position: absolute;
+  margin-left: 40px;
+  font-size: 16px;
+}
+
+#secondclock {
+  position: absolute;
+  top: 9px;
+  margin-left: 80px;
+  font-size: 16px;
+}
+
+#hourclock {
+  position: absolute;
+  font-size: 16pt;
+}
+
+#hourbar,
+#minutebar,
+#secondbar {
+  position: absolute;
+  height: 3px;
+  background-color: #f00;
+  text-align: right;
+}
+
+#minutebar,
+#secondbar {
+  width: 15px;
+}
+
+#hourbar {
+  background-color: #f00;
+  width: 15px;
+}
+
+#minutebar {
+  background-color: #000fff;
+  margin-left: 40px;
+}
+
+#secondbar {
+  background-color: #00ff00;
+  margin-left: 80px;
+  /*-webkit-animation: mymove 60s infinite linear;*/
+}
+
+@-webkit-keyframes mymove {
+    from {top: 0px;}
+    to {top: 600px;}
+}
+
+@-webkit-keyframes mybeforemove {
+    from {top: 0px;}
+    to {top: -1110px;}
+}
