@@ -2,6 +2,47 @@ html, body {
   height: 98%;
 }
 
+#roundclock {
+  left: 40%;
+  border-radius: 100%;
+  position: absolute;
+  height: 200px;
+  width: auto;
+}
+
+#roundhour {
+  background-color: #0000ff;
+  height: 70px;
+  position: absolute;
+  width: 3px;
+  top: 30px;
+  transform: rotate(360deg);
+  transform-origin: 0 bottom;
+  left: 50%;
+}
+
+#roundminute {
+  background-color: #00ff00;
+  height: 80px;
+  position: absolute;
+  width: 2px;
+  top: 20px;
+  transform: rotate(180deg);
+  transform-origin: 0 bottom;
+  left: 50%;
+}
+
+#roundsecond {
+  background-color: #ff0000;
+  height: 90px;
+  position: absolute;
+  width: 1px;
+  top: 10px;
+  transform: rotate(30deg);
+  transform-origin: 0 bottom;
+  left: 50%;
+}
+
 #canvas {
   overflow: auto;
   position: absolute;
