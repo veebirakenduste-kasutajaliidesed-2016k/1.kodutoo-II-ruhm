@@ -8,7 +8,7 @@ html, body {
   height: 100%;
   min-height: 100px;
   max-height: 1020px;
-  width: 200px;
+  width: 165px;
   background-color: #f0f0f0;
   top: 0px;
   left: 0px;
@@ -22,7 +22,6 @@ html, body {
 
 #secondclock {
   position: absolute;
-  top: 9px;
   margin-left: 80px;
   font-size: 16px;
 }
@@ -47,7 +46,7 @@ html, body {
 }
 
 #hourbar {
-  background-color: #f00;
+  background-color: rgba(255, 0, 0, 1.0);
   width: 15px;
 }
 
@@ -59,15 +58,4 @@ html, body {
 #secondbar {
   background-color: #00ff00;
   margin-left: 80px;
-  /*-webkit-animation: mymove 60s infinite linear;*/
-}
-
-@-webkit-keyframes mymove {
-    from {top: 0px;}
-    to {top: 600px;}
-}
-
-@-webkit-keyframes mybeforemove {
-    from {top: 0px;}
-    to {top: -1110px;}
 }

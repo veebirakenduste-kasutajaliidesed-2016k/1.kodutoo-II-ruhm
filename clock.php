@@ -7,22 +7,22 @@
   <script src="clock.js"></script>
 </head>
 <body>
-
+<div id="clock" style="position: absolute; z-index: 1;"></div>
 <div id="canvas">
-<table id="hourclock">
+<div id="hourclock">
+<img src="images/hour.png">
+</div>
 
-</table>
-
-<table id="minuteclock">
-
-</table>
+<div id="minuteclock">
+<img src="images/secmin.png">
+</div>
 
 <div id="secondclock">
 <img src="images/secmin.png">
 </div>
 <div id="hourbar"></div>
 <div id="minutebar"></div>
-<div id="secondbar"><div id="clock" style="position: absolute; z-index: 1;"></div>
+<div id="secondbar">
 </div>
 
 </div>
