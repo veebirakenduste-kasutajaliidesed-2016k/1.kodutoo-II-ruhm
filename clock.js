@@ -5,7 +5,7 @@ window.onload= function(){
   var clock = document.getElementById('clock').style.color="Blue";
 
   window.setInterval(function(){
-//iga 500ms tagant käivitan writeDate´i
+//iga 500ms tagant kĆ¤ivitan writeDateĀ´i
     writeDate();
 
 
@@ -13,7 +13,7 @@ window.onload= function(){
 
 
 };
-//võtab aja ja kirjutab #clock elemendi sisse
+//vĆµtab aja ja kirjutab #clock elemendi sisse
 function writeDate(){
   var today = new Date();
 

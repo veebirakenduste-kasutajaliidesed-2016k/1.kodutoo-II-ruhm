@@ -1,0 +1,27 @@
+#clock{
+  left: 10%;
+  position: absolute;
+  width: auto;
+
+}
+
+#roundclock{
+  left: 40%;
+  position: absolute;
+  height: 40px;
+  width: small;
+}
+
+#roundminute{
+  left: 50%;
+  position: relative;
+  height: 50px;
+  width: auto;
+}
+
+#roundsecond{
+  left: 50%;
+  position: absolute;
+  height: 10px;
+  width: small;
+}
