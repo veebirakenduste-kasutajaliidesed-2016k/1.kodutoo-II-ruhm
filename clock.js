@@ -10,7 +10,12 @@ window.setInterval(function(){
 
 }, 500);
 
-writeDate();
+ clock.addEventListener('click', function(){
+   var today = new Date();
+   var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+   var day_of_week = days[today.getDay()];
+    alert("Today is " + day_of_week);
+});
 
 
 };
