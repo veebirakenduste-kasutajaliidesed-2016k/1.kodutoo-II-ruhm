@@ -2,26 +2,79 @@
   left: 10%;
   position: absolute;
   width: auto;
+  color: red;
+  rotation-point:50% 50%;
+rotation:180deg;
 
 }
+
+@keyframes rotate {
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.hours-container {
+  animation: rotate 43200s infinite linear;
+}
+.minutes-container {
+  animation: rotate 3600s infinite linear;
+}
+.seconds-container {
+  animation: rotate 60s infinite linear;
+}
+.minutes-container {
+  animation: rotate 3600s infinite steps(60);
+}
+.seconds-container {
+  animation: rotate 60s infinite steps(60);
+}
+
+
+
+
 
 #roundclock{
   left: 40%;
   position: absolute;
   height: 40px;
   width: small;
+  z-index: 1;
 }
 
-#roundminute{
-  left: 50%;
-  position: relative;
-  height: 50px;
-  width: auto;
-}
-
-#roundsecond{
-  left: 50%;
+#seconds{
+  background-color: red;
+  height: 90px;
   position: absolute;
-  height: 10px;
-  width: small;
+  width: 1px;
+  top: 10px;
+  transform: rotate(0deg);
+  transform-origin: 0 bottom;
+  left: 50%;
+
+
+}
+
+
+#minutes{
+  background-color: black;
+  height: 70px;
+  position: absolute;
+  width: 3px;
+  top: 30px;
+  transform: rotate(360deg);
+  transform-origin: 0 bottom;
+  left: 50%;
+
+}
+
+#roundhour{
+  background-color: black;
+  height: 80px;
+  position: absolute;
+  width: 3px;
+  top: 20px;
+  transform: rotate(180deg);
+  transform-origin: 0 bottom;
+  left: 50%;
 }
