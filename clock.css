@@ -9,11 +9,10 @@ h1{
 }
 
 #clock{
-  margin: 150px;
   font-size: 80px;
   text-align: center;
   vertical-align: middle;
-  line-height: 200px;
+  /*line-height: 200px;*/
   font-family: my font;
   border: 5px solid black;
   border-radius: 5px;
@@ -27,6 +26,14 @@ h1{
   left: 0;
   right: 0;
   margin: auto;
+  transition-duration: 2s;
+}
+
+#date{
+  font-size: 34px;
+  color: red;
+  font-family: my font;
+  text-align: center;
 }
 
 #clock:hover{
