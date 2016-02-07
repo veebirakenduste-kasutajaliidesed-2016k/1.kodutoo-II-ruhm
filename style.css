@@ -2,8 +2,14 @@ html, body {
   height: 98%;
 }
 
+#toround {
+  color: rgba(0, 0, 0, 0.2);
+  float: right;
+  cursor: pointer;
+}
+
 #roundclock {
-  left: 40%;
+  left: 50%;
   border-radius: 100%;
   position: absolute;
   height: 200px;

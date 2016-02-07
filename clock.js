@@ -1,6 +1,8 @@
 window.onload = function() {
 
   var clock = document.getElementById("clock");
+  var barclock = document.getElementById("canvas");
+  var roundclock = document.getElementById("roundclock");
 
   var secondbar = document.getElementById("secondbar");
   var minutebar = document.getElementById("minutebar");
@@ -10,9 +12,31 @@ window.onload = function() {
   var roundminute = document.getElementById("roundminute");
   var roundsecond = document.getElementById("roundsecond");
 
-  document.getElementById("canvas").addEventListener("drag", function() {
-    console.log("klick");
+  document.getElementById("toround").addEventListener("click", function() {
+    var toleft = 0;
+    var towidth = 165;
+
+    var leftinterval = setInterval(function() {
+        toleft += 0.5;
+        towidth += 0.35;
+
+        barclock.style.width = towidth + "px";
+        barclock.style.left = toleft + "%";
+
+        if(toleft === 50) {
+          var toopacity = 1;
+          var opacityinterval = setInterval(function() {
+            toopacity -= 0.05;
+            barclock.style.opacity = toopacity;
+          }, 50);
+
+          clearInterval(leftinterval);
+        }
+
+      }, 20);
+
   });
+
 
   writeDate();
 
