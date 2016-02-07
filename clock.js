@@ -31,3 +31,20 @@ function addZeroBefore(number){
   }
   return number;
 }
+
+function switch_color() {
+  var ear_1 = document.getElementById('ear_1');
+  ear_1.style.background = "black";
+  var ear_2 = document.getElementById('ear_2');
+  ear_2.style.background = "black";
+  var leg_1 = document.getElementById('leg_1');
+  leg_1.style.background = "black";
+  var leg_2 = document.getElementById('leg_2');
+  leg_2.style.background = "black";
+  var circle_1 = document.getElementById('circle_1');
+  circle_1.style.background = "black";
+  var circle_2 = document.getElementById('circle_2');
+  circle_2.style.background = "grey";
+  var clock = document.getElementById('clock');
+  clock.style.color = "white";
+}
