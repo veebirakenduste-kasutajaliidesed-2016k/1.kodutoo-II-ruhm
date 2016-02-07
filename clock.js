@@ -2,7 +2,7 @@ window.onload = function (){
 
 var clock = document.getElementById('clock');
 
-writeDate(); //selleks, et ei oleks algul näha 0:0:0
+
 
   //käivitan intervalli
 window.setInterval(function(){
@@ -21,12 +21,14 @@ function writeDate(){
 
   var today =new Date();
 
+
   var hours = today.getHours();
   var minutes = today.getMinutes();
   var seconds = today.getSeconds();
 
 
 clock.innerHTML = addZeroBefore(hours) + ":" + addZeroBefore(minutes) + ":" + addZeroBefore(seconds);
+
 
 }
 
