@@ -29,16 +29,21 @@ h1{
   transition-duration: 2s;
 }
 
-#date{
-  font-size: 34px;
-  color: red;
-  font-family: my font;
-  text-align: center;
-}
-
 #clock:hover{
   color: white;
   background-color: blue;
+}
+
+footer{
+  position: absolute;
+  top: 80%;
+  left: 45%;
+}
+
+button{
+  position: absolute;
+  top: 70%;
+  left: 45%;
 }
 
 @font-face{

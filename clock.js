@@ -17,6 +17,9 @@ window.setInterval(function(){
     alert("Today is " + day_of_week);
 });
 
+change.addEventListener('click', function(){
+  document.getElementById("body").style.background = "pink";
+});
 
 };
 
