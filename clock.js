@@ -17,14 +17,15 @@ window.onload = function(){ //assign divs to variables after page has finished l
 }
 document.addEventListener("click", function(){
 	if (event.target.matches('.btn--close') || event.target.matches('.overlay.is-visible')) {
-		var overlay = document.getElementsByClassName("overlay");
-		var i;
-		for (i = 0; i < overlay.length; i++) {
-			var overlayShow = overlay[i];
-			if (overlayShow.classList.contains('is-visible')) {
-				document.querySelector('#overlay').classList.toggle('disappear');
-				setTimeout(function(){overlayShow.classList.remove('is-visible');overlayShow.classList.remove('disappear');}, 150);
-			}
+		var overlay = document.querySelector('.overlay');
+		if (overlay.classList.contains('is-visible')) {
+			document.querySelector('#overlay').classList.toggle('disappear');
+			setTimeout(function(){
+				overlay.classList.remove('is-visible');
+				overlay.classList.remove('disappear');
+				document.querySelector('.overlay__options').classList.remove('is-visible');
+				document.querySelector('.overlay__alarm').classList.remove('is-visible');
+			}, 150);
 		}//end overlay close
 	};
 	if (event.target.matches('#darkscheme')){
@@ -49,6 +50,16 @@ document.addEventListener("click", function(){
 	if (event.target.matches('.btn--overlay')){
 		showOverlay();
 	};
+	if(document.querySelector('.overlay__alarm').classList.contains('is-visible') && event.target.matches('.btn.btn--alarm') || event.target.matches('.overlay.is-visible')){
+		alarm.pause();
+		console.log('alarm kinni')
+		setTimeout(function(){
+			document.querySelector('.overlay').classList.remove('is-visible');
+			document.querySelector('.overlay').classList.remove('disappear');
+			document.querySelector('.overlay__options').classList.remove('is-visible');
+			document.querySelector('.overlay__alarm').classList.remove('is-visible');
+		}, 150);
+	}
 });
 function addZero(number){ //format numbers
 	if(number < 10){
@@ -58,6 +69,7 @@ function addZero(number){ //format numbers
 };
 function showOverlay() {
 	document.querySelector('#overlay').classList.toggle('is-visible');
+	document.querySelector('.overlay__options').classList.toggle('is-visible');
 };
 function writeTime(){
 	d = new Date();
@@ -65,8 +77,11 @@ function writeTime(){
 };
 function checkTime(){
 	d = new Date();
-	if(d.getHours() == parseInt(document.querySelector('.alarm__hours').value) && d.getMinutes() == parseInt(document.querySelector('.alarm__minutes').value) && d.getSeconds() == 0){
+	if(d.getHours() == parseInt(document.querySelector('.alarm__time--hours').value) && d.getMinutes() == parseInt(document.querySelector('.alarm__time--minutes').value) && d.getSeconds() == 0){
+		console.log('Alarm tööle')
 		alarm.play();
+		document.querySelector('.overlay').classList.toggle('is-visible');
+		document.querySelector('.overlay__alarm').classList.toggle('is-visible');
 	}
 };
 
