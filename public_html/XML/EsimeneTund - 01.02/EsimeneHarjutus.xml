@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--XML rakenduste esimene harjutus: arvutis olev tarkvara ning selle kohta käivad andmed-->
+<software>
+<media>
+<program>
+  <name>Audacity</name>
+  <version>2.1.1</version>
+  <publisher>Audacity Team</publisher>
+  <size>50.8 MB</size>
+</program>
+<program>
+  <name>Blender</name>
+  <version>2.76.1</version>
+  <publisher>Blender Foundation</publisher>
+  <size>300 MB</size>
+</program>
+<program>
+  <name>Solid Edge ST8</name>
+  <version>108.00.00091</version>
+  <publisher>Siemens</publisher>
+  <size>5.10 GB</size>
+</program>
+<program>
+  <name>Unity</name>
+  <version>5.3.1f1</version>
+  <publisher>Unity Technologies ApS</publisher>
+  <size></size>
+</program>
+<program>
+  <name>VirtualCloneDrive</name>
+  <version>5.5.0.0</version>
+  <publisher>Elaborate Bytes</publisher>
+  <size>23.6 MB</size>
+</program>
+<program>
+  <name>VLC media player</name>
+  <version>2.2.1</version>
+  <publisher>VideoLAN</publisher>
+  <size>300 MB</size>
+</program>
+</media>
+<text>
+<program>
+  <name>LibreOffice</name>
+  <version>5.0.4.2</version>
+  <publisher>The Document Foundation</publisher>
+  <size>588 MB</size>
+</program>
+<program>
+  <name>Microsoft Office Professional Plus 2010</name>
+  <version>14.0.7015.1000</version>
+  <publisher>Microsoft Corporation</publisher>
+  <size></size>
+</program>
+<program>
+  <name>Notepad++</name>
+  <version>6.8.8</version>
+  <publisher>Notepad++ Team</publisher>
+  <size></size>
+</program>
+</text>
+<browsers>
+<program>
+  <name>Mozilla Firefox</name>
+  <version>43.0.4</version>
+  <publisher>Mozilla</publisher>
+  <size>89.2 MB</size>
+</program>
+<program>
+  <name>Google Chrome</name>
+  <version>47.0.2526.111</version>
+  <publisher>Google Inc.</publisher>
+  <size></size>
+</program>
+</browsers>
+<database>
+<program>
+  <name>MySQL Workbench 6.3 CE</name>
+  <version>6.3.6</version>
+  <publisher>Oracle Corporation</publisher>
+  <size>139 MB</size>
+</program>
+</database>
+<uncategorized>
+<program>
+  <name>KeyShot 5</name>
+  <version>5.0</version>
+  <publisher>Luxion ApS</publisher>
+  <size></size>
+</program>
+<program>
+  <name>Visual Paradigm CE 13.0</name>
+  <version>13.0</version>
+  <publisher>Visual Paradigm International Ltd.</publisher>
+  <size></size>
+</program>
+<program>
+  <name>WinSCP</name>
+  <version>5.7.6</version>
+  <publisher>martin Prikryl</publisher>
+  <size>23.6 MB</size>
+</program>
+</uncategorized>
+</software>

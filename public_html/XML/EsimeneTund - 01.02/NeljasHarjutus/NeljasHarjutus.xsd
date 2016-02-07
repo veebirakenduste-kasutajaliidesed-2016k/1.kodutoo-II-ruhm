@@ -1,0 +1,24 @@
+<?xml version="1.0" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="software">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="media" maxOccurs="unbounded"/>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="program" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="name" type="xs:string"/>
+										<xs:element name="version" type="xs:integer"/>
+										<xs:element name="publisher" type="xs:string"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

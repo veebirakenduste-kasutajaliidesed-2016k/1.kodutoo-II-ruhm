@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<rakendused xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="Skeem3.xsd">
+	<officePrograms>
+		<office>
+			<nimi>Microsoft Excel 2010</nimi>
+			<versioon>14.0.7165.5000 (64-bit)</versioon>
+		</office>
+		<office>
+			<nimi>Microsoft Word 2010</nimi>
+			<versioon>14.0.7165.5000 (64-bit)</versioon>
+			<aasta>2011</aasta>
+		</office>
+		<office>
+			<nimi>Microsoft PowerPoint 2010</nimi>
+			<versioon>14.0.7165.5000 (64-bit)</versioon>
+		</office>
+		<office>
+			<nimi>Microsoft Access 2010</nimi>
+			<versioon>14.0.7165.5000 (64-bit)</versioon>
+		</office>
+	</officePrograms>
+	<programmeeriminePrograms>
+		<programmeerimine>
+			<nimi>Python 3.5</nimi>
+			<versioon>v3.5.1:37a07cee5969</versioon>
+		</programmeerimine>
+		<programmeerimine>
+			<nimi>Unity</nimi>
+			<versioon>5.3.1f1</versioon>
+		</programmeerimine>
+		<programmeerimine>
+			<nimi>Eclipse</nimi>
+			<versioon>Mars.1 Release (4.5.1)</versioon>
+		</programmeerimine>
+	</programmeeriminePrograms>
+	<brauseridPrograms>
+		<brauserid>
+			<nimi>Chrome</nimi>
+			<versioon>47.0.2526.111 m (64-bit)</versioon>
+		</brauserid>
+		<brauserid>
+			<nimi>Mozilla Firefox</nimi>
+			<versioon>43.0.4</versioon>
+		</brauserid>
+		<brauserid>
+			<nimi>Internet Explorer</nimi>
+			<versioon>11.0.9600.18163</versioon>
+		</brauserid>
+	</brauseridPrograms>
+</rakendused>

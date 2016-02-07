@@ -1,0 +1,25 @@
+<HTML>
+<Head>
+<Script Language=JavaScript>
+
+function countLines(taID){
+// the value 3.4 below is an estimate of the number of words per line
+nChar = taID.value.match(/\S/g).length;
+tmpCalc = (taID.cols/3.4).toFixed(2);
+tmpCalc = taID.cols-tmpCalc;
+nLines = parseInt(nChar/tmpCalc);
+alert(nLines);
+}
+
+</Script>
+</Head>
+<Body>
+<center>
+<h4>Count Lines in a Text Area</h4>
+<textarea cols=30 rows=10 id=isTA1>
+</textarea>
+<br><br>
+<input type=button value='Count Lines' onClick="countLines(isTA1)">
+</center>
+</Body>
+</HTML>

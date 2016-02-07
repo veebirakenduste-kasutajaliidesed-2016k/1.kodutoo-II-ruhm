@@ -1,0 +1,24 @@
+CREATE TABLE Tellimus(
+  ID INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  Toode VARCHAR(30),
+  Eesnimi VARCHAR(30),
+  Perekonnanimi VARCHAR(30),
+  Aadress VARCHAR(30),
+  Skuupaev DATETIME UNIQUE,
+  Email VARCHAR(30),
+  Aktsepteeritud VARCHAR(3) DEFAULT "Ei",
+  Summa DECIMAL(8, 2) NOT NULL,
+  ArveTasutud VARCHAR(3) DEFAULT "Ei"
+);
+
+Arvuti	Meelis	Mehine	Tamme tee 16	2014-05-30 07:30:00	Meelis@Mehine.ee
+Telefon	Juhan	Juurikas	Kuuse tee 29	2014-06-29 14:57:00	Juhan@Juurikas.ee
+Televiisor	Martin	Mardikas	Kadaka tee 9	2014-10-15 20:10:00	Martin@Mardikas.ee
+Tahvelarvuti	Silvia	Sipelgas	Männi tee 43	2014-12-01 02:00:00	Silvia@Sipelgas.ee	
+Sülearvuti	Kalle	Kaalikas	Lepa tee 30	2014-03-10 10:00:00	Kalle@Kaalikas.ee
+
+INSERT INTO Tellimus (Toode, Eesnimi, Perekonnanimi, Aadress, Skuupaev, Email) VALUES ('Arvuti', 'Meelis', 'Mehine', 'Tamme tee 16', '2014-05-30 07:30:00', 'Meelis@Mehine.ee');
+INSERT INTO Tellimus (Toode, Eesnimi, Perekonnanimi, Aadress, Skuupaev, Email) VALUES ('Telefon', 'Juhan', 'Juurikas', 'Kuuse tee 29', '2014-06-29 14:57:00', 'Juhan@Juurikas.ee');
+INSERT INTO Tellimus (Toode, Eesnimi, Perekonnanimi, Aadress, Skuupaev, Email) VALUES ('Televiisor', 'Martin', 'Mardikas', 'Kadaka tee 9', '2014-10-15 20:10:00', 'Martin@Mardikas.ee');
+INSERT INTO Tellimus (Toode, Eesnimi, Perekonnanimi, Aadress, Skuupaev, Email) VALUES ('Tahvelarvuti', 'Silvia', 'Sipelgas', 'Pihlaka tee 43', '2014-12-01 02:00:00', 'Silvia@Sipelgas.ee');
+INSERT INTO Tellimus (Toode, Eesnimi, Perekonnanimi, Aadress, Skuupaev, Email) VALUES ('Laptop', 'Kalle', 'Kaalikas', 'Lepa tee 30', '2014-03-10 10:00:00', 'Kalle@Kaalikas.ee');
