@@ -1,19 +1,27 @@
 
 window.onload = function(){
   var clock = document.getElementById('clock');
-
-
+  var date = document.getElementById('date');
   // selleks, et ei oleks näha 0:0:0-i
   writeDate();
-
+  WriteCurrentDate();
   // käivitan intervalli / 500ms = 0.5s
   window.setInterval(function(){
     // iga 500ms tagant käivitan writeDate´i
     writeDate();
+    WriteCurrentDate();
   }, 500);
-
-
 };
+
+function WriteCurrentDate(){
+  var currentDate = new Date();
+  var day = currentDate.getDate();
+  var month = currentDate.getMonth() + 1;
+  var year = currentDate.getFullYear();
+  date.innerHTML = " " + addZeroBefore(day) + "/" + addZeroBefore(month) + "/" + year + " ";
+}
+
+
 
 // võtab aja ja kirjutab #clock elemendi sisse
 function writeDate(){
@@ -47,4 +55,6 @@ function switch_color() {
   circle_2.style.background = "grey";
   var clock = document.getElementById('clock');
   clock.style.color = "white";
+  var date = document.getElementById('date');
+  date.style.color = "white";
 }

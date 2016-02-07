@@ -1,3 +1,5 @@
+
+
 #alarm_clock{
   width: 1200px;
   height: 900px;
@@ -44,6 +46,16 @@ div.clock{
   color: black;
   position: absolute;
   top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+div.date{
+  font-family: "Tahoma", Geneva, sans-serif;
+  font-size: 50px;
+  color: black;
+  position: absolute;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
