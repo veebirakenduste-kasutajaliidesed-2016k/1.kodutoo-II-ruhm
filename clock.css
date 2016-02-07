@@ -1,0 +1,52 @@
+body{
+  background-color: #00FFFF;
+}
+
+h1{
+  text-align: center;
+  font-size: 32px;
+  font-family: cursive;
+}
+
+#clock{
+  font-size: 80px;
+  text-align: center;
+  vertical-align: middle;
+  /*line-height: 200px;*/
+  font-family: my font;
+  border: 5px solid black;
+  border-radius: 5px;
+  color: red;
+  background-color: black;
+  width: 500px;
+  height: 200px;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition-duration: 2s;
+}
+
+#clock:hover{
+  color: white;
+  background-color: blue;
+}
+
+footer{
+  position: absolute;
+  top: 80%;
+  left: 45%;
+}
+
+button{
+  position: absolute;
+  top: 70%;
+  left: 45%;
+}
+
+@font-face{
+  font-family: my font;
+  src: url("digital-7.ttf");
+}
