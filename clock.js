@@ -42,19 +42,24 @@ function addZeroBefore(number){
 
 function switch_color() {
   var ear_1 = document.getElementById('ear_1');
-  ear_1.style.background = "black";
+  ear_1.style.background = "grey";
   var ear_2 = document.getElementById('ear_2');
-  ear_2.style.background = "black";
+  ear_2.style.background = "grey";
   var leg_1 = document.getElementById('leg_1');
-  leg_1.style.background = "black";
+  leg_1.style.background = "grey";
   var leg_2 = document.getElementById('leg_2');
-  leg_2.style.background = "black";
+  leg_2.style.background = "grey";
   var circle_1 = document.getElementById('circle_1');
-  circle_1.style.background = "black";
+  circle_1.style.background = "grey";
   var circle_2 = document.getElementById('circle_2');
-  circle_2.style.background = "grey";
+  circle_2.style.background = "black";
   var clock = document.getElementById('clock');
   clock.style.color = "white";
   var date = document.getElementById('date');
   date.style.color = "white";
+}
+
+function play_music(){
+  var music = new Audio('alarm.mp3');
+  music.play();
 }
