@@ -1,4 +1,5 @@
 writeTime();
+var alarm = new Audio("alarm.mp3");
 window.onload = function(){ //assign divs to variables after page has finished loading
 	var d = new Date(),
 	time = document.querySelector('#time'),
@@ -10,6 +11,7 @@ window.onload = function(){ //assign divs to variables after page has finished l
 	var day = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 	setInterval(function(){ //update every second
 		writeTime();
+		checkTime();
 	},1000);
 	date.innerHTML = day[d.getDay()]+'/'+month[d.getMonth()]+'/'+d.getFullYear();
 }
@@ -33,22 +35,14 @@ document.addEventListener("click", function(){
 			document.querySelector('body').style.color = 'rgba(0, 0, 0, 0.87)';
 			document.querySelector('.overlay__options').style.backgroundColor = '#FFFFFF';
 			document.querySelector('#darkscheme').innerHTML = 'Dark';
-			var x = document.querySelectorAll('.btn--scheme');
-			var i;
-			for (i = 0; i < x.length; i++) {
-			    x[i].style.backgroundColor = "#FFFFFF";
-			};
+			document.querySelector('.btn--scheme').style.backgroundColor = "#FFFFFF";
 		}else{
 			document.querySelector('.container').style.backgroundColor = '#212121';
 			document.querySelector('.btn--overlay').style.backgroundColor = '#D50000';
 			document.querySelector('.clock').style.backgroundColor = '#424242'
 			document.querySelector('body').style.color = 'rgba(255, 255, 255, 0.87)';
 			document.querySelector('.overlay__options').style.backgroundColor = '#424242';
-			var x = document.querySelectorAll('.btn--scheme');
-			var i;
-			for (i = 0; i < x.length; i++) {
-			    x[i].style.backgroundColor = "#424242";
-			};
+			document.querySelector('.btn--scheme').style.backgroundColor = "#424242";
 			document.querySelector('#darkscheme').innerHTML = 'Light';
 		};
 	};
@@ -68,5 +62,11 @@ function showOverlay() {
 function writeTime(){
 	d = new Date();
 	time.innerHTML = addZero(d.getHours())+'/'+addZero(d.getMinutes())+'/'+addZero(d.getSeconds());
+};
+function checkTime(){
+	d = new Date();
+	if(d.getHours() == parseInt(document.querySelector('.alarm__hours').value) && d.getMinutes() == parseInt(document.querySelector('.alarm__minutes').value) && d.getSeconds() == 0){
+		alarm.play();
+	}
 };
 
