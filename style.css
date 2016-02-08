@@ -1,3 +1,19 @@
+
+body
+{
+	color: black;
+  background-image: url("http://www.ambwallpapers.com/wp-content/uploads/2015/02/spacee-7.jpg");
+	background-repeat: repeat;
+	background-position: top;
+  background-size: 350px;
+	margin: 0px;
+	padding: 0px;
+
+}
+
+
+
+
 #clock{
   left: 10%;
   position: absolute;
@@ -42,7 +58,7 @@ rotation:180deg;
   z-index: 1;
 }
 
-#seconds{
+#roundsecond{
   background-color: red;
   height: 90px;
   position: absolute;
@@ -56,7 +72,7 @@ rotation:180deg;
 }
 
 
-#minutes{
+#roundminute{
   background-color: black;
   height: 70px;
   position: absolute;
