@@ -2,9 +2,13 @@ html, body {
   height: 98%;
 }
 
+body {
+  background-image: url('images/background.png');
+}
+
 #innerclock {
   transform: rotate(90deg);
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(255, 0, 0, 0.5);
   cursor: pointer;
   position: absolute;
   top: 130px;
@@ -12,12 +16,13 @@ html, body {
 }
 
 #toround {
-  color: rgba(0, 0, 0, 0.2);
+  color: rgba(255, 0, 0, 0.5);
   float: right;
   cursor: pointer;
 }
 
 #roundclock {
+  background-size: cover;
   left: 50%;
   border-radius: 100%;
   position: absolute;

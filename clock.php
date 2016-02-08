@@ -33,7 +33,7 @@
 <!-- ROUNDCLOCK -->
 <div id="roundclock">
 
-  <img src="images/clock.png">
+  <img id="clickclock" src="images/clock.png">
 
   <div id="innerclock">
     <i class="fa fa-bars"></i>

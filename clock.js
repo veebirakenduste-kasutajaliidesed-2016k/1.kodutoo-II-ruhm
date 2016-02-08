@@ -3,6 +3,7 @@ window.onload = function() {
   var clock = document.getElementById("clock");
   var barclock = document.getElementById("canvas");
   var roundclock = document.getElementById("roundclock");
+  var rounddesign = document.getElementById("clickclock"); // rounddesign.src = "images/clock.png";
 
   var secondbar = document.getElementById("secondbar");
   var minutebar = document.getElementById("minutebar");
@@ -12,16 +13,75 @@ window.onload = function() {
   var roundminute = document.getElementById("roundminute");
   var roundsecond = document.getElementById("roundsecond");
 
-  roundclock.addEventListener("click", function(event) {
+  roundclock.addEventListener("click", function() {
+    console.log(event);
+    console.log("X:" + event.offsetX);
+    console.log("Y:" + event.offsetY);
 
-    console.log("X:" + event.x);
-    console.log("Y:" + event.y);
+    var x = event.offsetX;
+    var y = event.offsetY;
 
-    var posx = event.x;
-    var posy = event.y;
-    if(posx > 445 && posx < 470 && posy > 18 && posy < 40) {
-      console.log("12");
+    if(x > 130 && x < 140 && y > 15 && y < 40) {
+      roundclock.style.backgroundImage = "url('images/1.jpg')";
+      rounddesign.src = "images/clockwhite.png";
     }
+
+    if(x > 60 && x < 175 && y > 50 && y < 70) {
+      roundclock.style.backgroundImage = "url('images/2.jpg')";
+      rounddesign.src = "images/clockwhite.png";
+    }
+
+    if(x > 175 && x < 195 && y > 90 && y < 110) {
+      roundclock.style.backgroundImage = "url('images/3.jpg')";
+      rounddesign.src = "images/clockwhite.png";
+    }
+
+    if(x > 165 && x < 180 && y > 130 && y < 155) {
+      roundclock.style.backgroundImage = "url('images/4.jpg')";
+      rounddesign.src = "images/clockwhite.png";
+    }
+
+    if(x > 130 && x < 150 && y > 160 && y < 180) {
+      roundclock.style.backgroundImage = "url('images/5.jpg')";
+      rounddesign.src = "images/clockwhite.png";
+    }
+
+    if(x > 90 && x < 110 && y > 170 && y < 195) {
+      roundclock.style.backgroundImage = "url('images/6.jpg')";
+      rounddesign.src = "images/clockwhite.png";
+    }
+
+    if(x > 55 && x < 70 && y > 155 && y < 180) {
+      roundclock.style.backgroundImage = "url('images/7.jpg')";
+      rounddesign.src = "images/clock.png";
+    }
+
+    if(x > 20 && x < 35 && y > 130 && y < 150) {
+      roundclock.style.backgroundImage = "url('images/8.jpg')";
+      rounddesign.src = "images/clockwhite.png";
+    }
+
+    if(x > 5 && x < 20 && y > 90 && y < 110) {
+      roundclock.style.backgroundImage = "url('images/9.jpg')";
+      rounddesign.src = "images/clockwhite.png";
+    }
+
+    if(x > 15 && x < 40 && y > 15 && y < 70) {
+      roundclock.style.backgroundImage = "url('images/10.jpg')";
+      rounddesign.src = "images/clockwhite.png";
+    }
+
+    if(x > 50 && x < 75 && y > 20 && y < 40) {
+      roundclock.style.backgroundImage = "url('images/11.jpg')";
+      rounddesign.src = "images/clock.png";
+    }
+
+    if(x > 88 && x < 120 && y > 10 && y < 30) {
+      roundclock.style.backgroundImage = "url('images/12.jpg')";
+      rounddesign.src = "images/clockwhite.png";
+    }
+
+
 
   });
 
@@ -36,7 +96,7 @@ window.onload = function() {
     var leftinterval = setInterval(function() {
         toleft += 0.5;
         towidth += 0.35;
-        toheight -= 0.7;
+        toheight -= 0.68;
         fromtop += 0.08;
 
         barclock.style.width = towidth + "px";
