@@ -283,3 +283,174 @@ java Sisestus4
 javac Sisestus4.java
 java Sisestus4
 exit
+git status
+git discard
+git --help
+git log
+git rm
+git reset
+git status
+git checkout -- esimeneKodutoo.html
+git checkout -- esimeneKodutoo
+git checkout -- "esimeneKodutoo.html"
+git reset --hard origin/master
+git revert
+git reset --hard origin
+git reset --hard master
+git status
+git rebase -i
+git rebase -i HEAD~2
+git reset --soft HEAD^
+git revert --abort
+git revert
+git commit -m "Something terribly misguided"
+git reset --soft HEAD~
+git status
+git log --graph --oneline --all
+cd 
+git clone
+git status
+git head
+git status
+git add esimeneKodutoo.html
+git add /home/markuss/public_html/JS/1.kodutoo-II-ruhm.esimeneKodutoo.html
+git add .
+git commit -m "Test commit/done with digital and analog clock, added a bit of design"
+git status
+git push origin
+git push
+git config user.name
+git config user.email
+git status
+git push
+git push master
+git push /home/markuss/public_html/JS/1.kodutoo-II-ruhm
+git push github master:master
+git push 1.kodutoo-II-ruhm master:master
+git status
+git add .
+git push
+git push origin
+help
+git help
+git log
+git branch
+git diff
+git mv
+git push
+git remote show origin
+git config --get remote.origin.url
+git remote -v
+cd JS
+cd public_html
+cd JS
+cd 1.kodutoo-II-ruhm
+git init
+git config user.name
+git config user.email
+git status
+git add .
+git push
+error: The requested URL returned error: 403 Forbidden while accessi
+.git config
+.git/config
+.git config url
+.git config help
+config help
+git remote set-url origin https://Enij@github.com/Enij/1.kodutooo-II-ruhm.git
+git push
+.git/config
+cd JS
+..
+../
+cd
+cd public_html
+cd JS
+.git/config
+cd 1.kodutoo-II-ruhm
+.git/config
+cd
+git status
+cd public_html
+cd JS
+cd 1.kodutoo-II-ruhm
+git add .
+git commit -m "Added digital and analog clock and some design"
+git push
+git status
+git push
+git push master
+git push
+git push master
+cd public_html
+cd JS
+cd 1.kodutoo-II-ruhm
+ls
+git status
+git remote -v
+git push
+git config user.email
+git push origin master
+git remote set-url origin https://Enij@github.com/Enij/1.kodutoo-II-ruhm.git/
+git push
+git remote set-url origin https://Enij@github.com/Enij/1.kodutoo-II-ruhm.git
+git push
+R
+cbind(andmed, kokku=andmed["m"]*andmed["k"]
+R
+cd public_html/XML/R
+cd public_html/XML
+cd R
+cd teineTund - 8.02
+cd "teineTund - 8.02"
+cd R
+Rscript kotiarvutus.R
+more kotidvastus.txt
+q() exit
+javac Arvud1.java
+java Arvud1
+javac Proov1.java
+cd public_html/Java/teineTund
+javac Proov1.java
+java Proov1
+javac Arvud1.java
+java Arvud1
+javac Proov1.java
+javac Arvud1.java
+java Proov1
+java Arvud1
+javac Proov1.java
+javac Arvud1.java
+javac Proov1.java
+javac Arvud1.java
+java Arvud1
+javac Proov1.java
+java Proov1
+javac Arvud1.java
+java Arvud1
+javac Proov1.java
+java Proov1
+javac Arvud1.java
+java Arvud1
+javac Proov1.java
+java Proov1
+javac Proov1.java
+java Proov1
+javac Proov1.java
+java Proov1
+javac Proov1.java
+java Proov1
+javac Proov1.java
+java Proov1
+javac Proov1.java
+java Proov1
+javac Proov1.java
+java Proov1
+javac Proov1.java
+java Proov1
+javac Proov1.java
+java Proov1
+javac Proov1.java
+java Proov1
+javac Proov1.java
+java Proov1
