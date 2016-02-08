@@ -16,13 +16,17 @@ window.onload = function(){
 function writeDate(){
 
   var today = new Date();
-
+  var day = addZeroBefore(today.getDate());
+  var month = addZeroBefore(today.getMonth()+1);
+  var year = today.getFullYear();
   var hours = addZeroBefore(today.getHours());
   var minutes = addZeroBefore(today.getMinutes());
   var seconds = addZeroBefore(today.getSeconds());
 
-  clock.innerHTML = hours + ':' + minutes + ':' + seconds;
+  clock.innerHTML = hours + ':' + minutes + ':' + seconds + ' ' + day + '.' + month + '.' + year;
 }
+
+
 
 function addZeroBefore(number){
 
@@ -31,4 +35,17 @@ function addZeroBefore(number){
   }
 
   return number;
+
+
+  function changeBackground1(){
+
+    document.getElementById("body").style.backgroundImage = "url('wallpaper1.jpg')";
+
+  }
+
+  function changeBackground2(){
+
+    document.getElementById("body").style.backgroundImage = "url('wallpaper2.jpg')";
+
+  }
 }
