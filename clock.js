@@ -12,6 +12,20 @@ window.onload = function() {
   var roundminute = document.getElementById("roundminute");
   var roundsecond = document.getElementById("roundsecond");
 
+  roundclock.addEventListener("click", function(event) {
+
+    console.log("X:" + event.x);
+    console.log("Y:" + event.y);
+
+    var posx = event.x;
+    var posy = event.y;
+    if(posx > 445 && posx < 470 && posy > 18 && posy < 40) {
+      console.log("12");
+    }
+
+  });
+
+
   document.getElementById("toround").addEventListener("click", function() {
     var toleft = 0;
     var towidth = 165;
@@ -24,34 +38,47 @@ window.onload = function() {
         towidth += 0.35;
         toheight -= 0.7;
         fromtop += 0.08;
-        boxtoround += 0.5;
-        //console.log(boxtoround);
 
         barclock.style.width = towidth + "px";
         barclock.style.height = toheight + "%";
         barclock.style.left = toleft + "%";
         barclock.style.top = fromtop + "px";
-        barclock.style.borderRadius = boxtoround + "%";
 
         if(toleft === 50) {
-          var toopacity = 1;
-          var fromopacity = 0;
-          var opacityinterval = setInterval(function() {
-            toopacity -= 0.05;
-            fromopacity += 0.05;
+          clearInterval(leftinterval);
+          var radiusinterval = setInterval(function() {
+            boxtoround += 2.5;
+            barclock.style.borderRadius = boxtoround + "%";
+            setTimeout(function() { clearInterval(radiusinterval); }, 1000);
 
-            roundclock.style.display = "block";
-            barclock.style.display = "none";
+            if(boxtoround === 50) {
+              var toopacity = 1;
+              var fromopacity = 0;
+              var opacityinterval = setInterval(function() {
+                toopacity -= 0.05;
+                fromopacity += 0.05;
 
-            barclock.style.opacity = toopacity;
-            roundclock.style.opacity = fromopacity;
+                roundclock.style.display = "block";
+                setTimeout(function() {
+                  barclock.style.display = "none";
+                }, 1000);
 
-            setTimeout(function() { clearInterval(opacityinterval); }, 1000);
+
+                barclock.style.opacity = toopacity;
+                roundclock.style.opacity = fromopacity;
+
+                setTimeout(function() { clearInterval(opacityinterval); }, 1000);
+
+              }, 50);
+            }
+
+
 
           }, 50);
 
-          clearInterval(leftinterval);
-        }
+
+
+          }
 
       }, 20);
 
@@ -88,15 +115,11 @@ function writeDate() {
 
   var roundsecondloc = second * 6;
   var roundminuteloc = minute * 6;
-  var roundhourloc = hour * 10 + minute / 2.5;
+  var roundhourloc = hour * 30 + minute / 2.5;
 
   roundsecond.style.transform = "rotate(" + roundsecondloc + "deg)";
   roundminute.style.transform = "rotate(" + roundminuteloc + "deg)";
   roundhour.style.transform = "rotate(" + roundhourloc + "deg)";
-
-}
-
-function animateToRound() {
 
 }
 
