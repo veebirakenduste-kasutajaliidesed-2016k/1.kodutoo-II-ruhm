@@ -15,7 +15,9 @@ window.onload = function(){
 
   writeDate();
   window.setInterval(function(){
+
     document.body.style.background = randomColors();
+
 }, 2000);
 
 };
@@ -60,7 +62,7 @@ window.addEventListener('keyup', function(event){
       document.body.style.background = randomColors();
       document.getElementById('clock').style.color = randomColors();
 
-      //iga 500millisekundi tagant k2ivitab writedate
+
     }, 100);
   }
 });
