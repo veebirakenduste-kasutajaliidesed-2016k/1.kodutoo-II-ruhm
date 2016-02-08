@@ -32,3 +32,13 @@ number = '0' + number;
   }
 return number;
 }
+
+
+window.addEventListener('keypress', function(event){
+
+     if(event.keyCode == 32){
+       clock.style.color = "red";
+
+     }
+
+   });
