@@ -61,3 +61,14 @@ if(number < 10){
 
     document.getElementById("clock").style.color = "green";
   }
+
+
+  function textBig() {
+      document.getElementById("clock").style.fontSize = "110px";
+  }
+  function textMedium() {
+      document.getElementById("clock").style.fontSize = "70px";
+  }
+  function textSmall() {
+      document.getElementById("clock").style.fontSize = "45px";
+  }
