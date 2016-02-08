@@ -15,19 +15,39 @@ window.onload = function() {
   document.getElementById("toround").addEventListener("click", function() {
     var toleft = 0;
     var towidth = 165;
+    var toheight = 100;
+    var fromtop = 0;
+    var boxtoround = 0;
 
     var leftinterval = setInterval(function() {
         toleft += 0.5;
         towidth += 0.35;
+        toheight -= 0.7;
+        fromtop += 0.08;
+        boxtoround += 0.5;
+        //console.log(boxtoround);
 
         barclock.style.width = towidth + "px";
+        barclock.style.height = toheight + "%";
         barclock.style.left = toleft + "%";
+        barclock.style.top = fromtop + "px";
+        barclock.style.borderRadius = boxtoround + "%";
 
         if(toleft === 50) {
           var toopacity = 1;
+          var fromopacity = 0;
           var opacityinterval = setInterval(function() {
             toopacity -= 0.05;
+            fromopacity += 0.05;
+
+            roundclock.style.display = "block";
+            barclock.style.display = "none";
+
             barclock.style.opacity = toopacity;
+            roundclock.style.opacity = fromopacity;
+
+            setTimeout(function() { clearInterval(opacityinterval); }, 1000);
+
           }, 50);
 
           clearInterval(leftinterval);
@@ -73,6 +93,10 @@ function writeDate() {
   roundsecond.style.transform = "rotate(" + roundsecondloc + "deg)";
   roundminute.style.transform = "rotate(" + roundminuteloc + "deg)";
   roundhour.style.transform = "rotate(" + roundhourloc + "deg)";
+
+}
+
+function animateToRound() {
 
 }
 

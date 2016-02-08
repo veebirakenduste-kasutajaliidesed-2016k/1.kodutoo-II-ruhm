@@ -35,6 +35,10 @@
 
   <img src="images/clock.png">
 
+  <div id="innerclock">
+    <i class="fa fa-bars"></i>
+  </div>
+
   <div id="roundhour">
   </div>
   <div id="roundminute">
