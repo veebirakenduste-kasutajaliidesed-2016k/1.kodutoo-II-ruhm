@@ -24,9 +24,12 @@ writeDate();
     var hours = addZeroBefore(today.getHours());
     var minutes = addZeroBefore(today.getMinutes());
     var seconds = addZeroBefore(today.getSeconds());
+    var day = addZeroBefore(today.getDate());
+    var month = addZeroBefore(today.getMonth());
+    var year = addZeroBefore(today.getFullYear());
 
       //muudan #clock elemendi htmli
-      clock.innerHTML = hours + ':' + minutes +  ':' + seconds;
+      clock.innerHTML ="Kell on </br>" +  hours + ':' + minutes +  ':' + seconds + "</br>" + day + "-" + month + "-" + year;
   }
 
   function addZeroBefore(number){
