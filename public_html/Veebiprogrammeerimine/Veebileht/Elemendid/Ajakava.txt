@@ -1,0 +1,46 @@
+﻿<h1>Kolmas nädal Tallinna Ülikoolis</h1>
+
+<h2>Esmaspäev</h2>
+
+8:15 IFI6001 Arvuti töövahendina algus
+11:45 IFI6001 Arvuti töövahendina lõpp
+
+12:15 IFI6013 Andmebaaside projekteerimine algus
+13:45 IFI6013 Andmebaaside projekteerimine lõpp
+
+14:15 IFI6076 Veebiprogrammeerimine algus
+15:45 IFI6076 Veebiprogrammeerimine lõpp
+
+<h2>Teisipäev</h2>
+
+10:15 IFI6076 Veebiprogrammeerimine algus
+11:45 IFI6076 Veebiprogrammeerimine lõpp
+
+12:15 IFI6056 Veebilehtede loomine algus
+13:45 IFI6056 Veebilehtede loomine lõpp
+
+<h2>Kolmapäev</h2>
+
+8:15 IFI6074 Programmeerimise alused algus
+9:45 IFI6074 Programmeerimise alused lõpp
+
+10:15 IFI6072 Arvutiriistvara algus
+11:45 IFI6072 Arvutiriistvara lõpp
+
+12:15 IFI6072 Arvutiriistvara algus
+13:45 IFI6072 Arvutiriistvara lõpp
+
+14:15 IFI6013 Andmebaaside projekteerimine algus
+15:45 IFI6013 Andmebaaside projekteerimine lõpp
+
+<h2>Neljapäev</h2>
+
+*Insert emptiness here*
+
+<h2>Reede</h2>
+
+12:15 IFI6045 MS Windows'i operatsioonisüsteemid algus
+13:45 IFI6045 MS Windows'i operatsioonisüsteemid lõpp
+
+14:15 IFI6074 Programmeerimise alused algus
+15:45 IFI6074 Programmeerimise alused lõpp

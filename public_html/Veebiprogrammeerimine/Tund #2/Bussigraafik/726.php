@@ -1,0 +1,26 @@
+<?php require("header.php"); ?>
+<div id="content" >
+	<h2>726 HAAPSALU-TALLINN</h2>
+	<pre>
+		12:00 HAAPSALU
+		12:05 UUEMÕISA (LÄÄNEMAA)
+		12:10 RANNAKÜLA
+		12:15 TAEBLA
+		12:17 PRIGULDI
+		12:19 VÕNTKÜLA
+		12:23 PALIVERE EIK
+		12:25 PALIVERE
+		12:30 JAAKNA
+		12:35 RISTI (LÄÄNEMAA)
+		12:38 REHEMÄE
+		12:45 ELLAMAA
+		12:50 TURBA (HARJUMAA) 
+		12:57 NISSI TEE
+		13:05 LAITSE TEE
+		13:06 RUILA TEE
+		13:12 HARUTEE
+		13:25 VANA-PÄÄSKÜLA
+		13:45 TALLINN
+	</pre>
+</div>
+<?php require("footer.php"); ?>

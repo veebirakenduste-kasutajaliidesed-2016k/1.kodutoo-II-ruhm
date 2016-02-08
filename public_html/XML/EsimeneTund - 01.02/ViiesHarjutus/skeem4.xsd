@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+ <xs:complexType name="programm">
+    <xs:sequence>
+		<xs:element name="nimi" type="xs:string" />
+     	<xs:element name="versioon" type="xs:string" />
+     	<xs:element name="aasta" type="xs:integer" minOccurs="0" />
+	</xs:sequence>
+ </xs:complexType>
+ <xs:element name="rakendused">
+	<xs:complexType>
+		<xs:sequence>
+		  <xs:element name="officePrograms" maxOccurs="unbounded">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="office" type="programm" maxOccurs="unbounded" />
+				</xs:sequence>
+			</xs:complexType>
+		 </xs:element>
+		  <xs:element name="programmeeriminePrograms" maxOccurs="unbounded">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="programmeerimine" maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="nimi" type="xs:string" />
+								<xs:element name="versioon" type="xs:string" />
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:complexType>
+		 </xs:element> 
+		 <xs:element name="brauseridPrograms" maxOccurs="unbounded">
+			<xs:complexType>
+				<xs:sequence>
+					<xs:element name="brauserid" maxOccurs="unbounded">
+						<xs:complexType>
+							<xs:sequence>
+								<xs:element name="nimi" type="xs:string" />
+								<xs:element name="versioon" type="xs:string" />
+							</xs:sequence>
+						</xs:complexType>
+					</xs:element>
+				</xs:sequence>
+			</xs:complexType>
+		 </xs:element>
+		</xs:sequence>
+	</xs:complexType>
+ </xs:element>
+</xs:schema>

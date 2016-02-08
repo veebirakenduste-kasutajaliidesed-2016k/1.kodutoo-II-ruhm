@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jelly?</title>
+</head>
+<body>
+	<a href="https://www.google.ee/search?q=mouse+icon&oq=mouse+icon&aqs=chrome..69i57.3968j0j1&sourceid=chrome&es_sm=93&ie=UTF-8">Jelly?</a>
+</body>
+</html>
