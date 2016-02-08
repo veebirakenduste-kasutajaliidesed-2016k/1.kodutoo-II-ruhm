@@ -29,7 +29,7 @@ writeDate();
     var year = addZeroBefore(today.getFullYear());
 
       //muudan #clock elemendi htmli
-      clock.innerHTML ="Kell on </br>" +  hours + ':' + minutes +  ':' + seconds + "</br>" + day + "-" + month + "-" + year;
+      clock.innerHTML ="Kell on </br>" +  hours + ':' + minutes +  ':' + seconds + "</br>" + day + "." + month + "." + year;
   }
 
   function addZeroBefore(number){
