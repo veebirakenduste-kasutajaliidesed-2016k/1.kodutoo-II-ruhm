@@ -1,0 +1,151 @@
+html, body {
+  height: 98%;
+}
+
+body {
+  background-image: url('images/background.png');
+}
+
+#colors {
+  position: absolute;
+  z-index: 222;
+  color: rgba(0, 0, 0, 0.5);
+  margin-left: 130px;
+  cursor: pointer;
+}
+
+#pink {
+  color: #FF00C8;
+}
+
+#turquoise {
+  color: #00F3FF;
+}
+
+#orange {
+  color: #FF8100;
+}
+
+.color {
+  border: 2px solid white;
+  height: 10px;
+  width: 10px;
+  margin-top: 5px;
+}
+
+#innerclock {
+  transform: rotate(90deg);
+  color: rgba(255, 0, 0, 0.5);
+  cursor: pointer;
+  position: absolute;
+  top: 130px;
+  left: 95px;
+}
+
+#toround {
+  /*color: rgba(255, 0, 0, 0.5);*/
+  cursor: pointer;
+}
+
+#roundclock {
+  background-size: cover;
+  left: 50%;
+  border-radius: 100%;
+  position: absolute;
+  height: 200px;
+  width: auto;
+  opacity: 0;
+  display: none;
+}
+
+#roundhour {
+  background-color: #0000ff;
+  height: 70px;
+  position: absolute;
+  width: 3px;
+  top: 30px;
+  transform: rotate(0deg);
+  transform-origin: 0 bottom;
+  left: 50%;
+}
+
+#roundminute {
+  background-color: #00ff00;
+  height: 80px;
+  position: absolute;
+  width: 2px;
+  top: 20px;
+  transform: rotate(0deg);
+  transform-origin: 0 bottom;
+  left: 50%;
+}
+
+#roundsecond {
+  background-color: #ff0000;
+  height: 90px;
+  position: absolute;
+  width: 1px;
+  top: 10px;
+  transform: rotate(0deg);
+  transform-origin: 0 bottom;
+  left: 50%;
+}
+
+#canvas {
+  overflow: hidden;
+  position: absolute;
+  height: 100%;
+  min-height: 100px;
+  max-height: 1020px;
+  width: 165px;
+  background-color: #f0f0f0;
+  top: 0px;
+  left: 0px;
+  display: block;
+}
+
+#minuteclock {
+  position: absolute;
+  margin-left: 40px;
+  font-size: 16px;
+}
+
+#secondclock {
+  position: absolute;
+  margin-left: 80px;
+  font-size: 16px;
+}
+
+#hourclock {
+  position: absolute;
+  font-size: 16pt;
+}
+
+#hourbar,
+#minutebar,
+#secondbar {
+  position: absolute;
+  height: 3px;
+  background-color: #f00;
+  text-align: right;
+}
+
+#minutebar,
+#secondbar {
+  width: 15px;
+}
+
+#hourbar {
+  background-color: rgba(255, 0, 0, 1.0);
+  width: 15px;
+}
+
+#minutebar {
+  background-color: #000fff;
+  margin-left: 40px;
+}
+
+#secondbar {
+  background-color: #00ff00;
+  margin-left: 80px;
+}
