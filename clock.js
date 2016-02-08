@@ -16,6 +16,9 @@ window.onload = function(){
   var year = today.getFullYear();
   document.getElementById('date').innerHTML = day+'.'+months[month]+' '+year;
 
+  var randomColor = "#000000".replace(/0/g,function(){return (~~(Math.random()*16)).toString(16);});
+
+  clock.addEventListener('click', changeColor);
 
 };
 
@@ -39,6 +42,7 @@ function addZeroBefore(number){
   return number;
 }
 
-function randomColor(){
-  
+function changeColor(){
+  clock.style.backgroundColor =randomColor;
+  console.log('EEEEEEEEEE');
 }
