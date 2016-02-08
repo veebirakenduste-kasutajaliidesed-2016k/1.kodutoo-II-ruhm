@@ -13,11 +13,29 @@ window.onload = function() {
   var roundminute = document.getElementById("roundminute");
   var roundsecond = document.getElementById("roundsecond");
 
-  roundclock.addEventListener("click", function() {
-    console.log(event);
-    console.log("X:" + event.offsetX);
-    console.log("Y:" + event.offsetY);
+  //Colors for barclock
+  var pink = document.getElementById("pink");
+  var turq = document.getElementById("turquoise");
+  var orange = document.getElementById("orange");
+  var transparent = document.getElementById("transparent");
 
+  pink.addEventListener("click", function() {
+    barclock.style.backgroundColor = "#FF00C8";
+  });
+
+  turq.addEventListener("click", function() {
+    barclock.style.backgroundColor = "#00F3FF";
+  });
+
+  orange.addEventListener("click", function() {
+    barclock.style.backgroundColor = "#FF8100";
+  });
+
+  transparent.addEventListener("click", function() {
+    barclock.style.backgroundColor = "rgba(0,0,0,0)";
+  });
+
+  roundclock.addEventListener("click", function() {
     var x = event.offsetX;
     var y = event.offsetY;
 
@@ -81,9 +99,7 @@ window.onload = function() {
       rounddesign.src = "images/clockwhite.png";
     }
 
-
-
-  });
+    });
 
 
   document.getElementById("toround").addEventListener("click", function() {
@@ -96,7 +112,7 @@ window.onload = function() {
     var leftinterval = setInterval(function() {
         toleft += 0.5;
         towidth += 0.35;
-        toheight -= 0.68;
+        toheight -= 0.7;
         fromtop += 0.08;
 
         barclock.style.width = towidth + "px";

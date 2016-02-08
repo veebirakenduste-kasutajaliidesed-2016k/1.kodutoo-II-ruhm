@@ -6,6 +6,33 @@ body {
   background-image: url('images/background.png');
 }
 
+#colors {
+  position: absolute;
+  z-index: 222;
+  color: rgba(0, 0, 0, 0.5);
+  margin-left: 130px;
+  cursor: pointer;
+}
+
+#pink {
+  color: #FF00C8;
+}
+
+#turquoise {
+  color: #00F3FF;
+}
+
+#orange {
+  color: #FF8100;
+}
+
+.color {
+  border: 2px solid white;
+  height: 10px;
+  width: 10px;
+  margin-top: 5px;
+}
+
 #innerclock {
   transform: rotate(90deg);
   color: rgba(255, 0, 0, 0.5);
@@ -16,8 +43,7 @@ body {
 }
 
 #toround {
-  color: rgba(255, 0, 0, 0.5);
-  float: right;
+  /*color: rgba(255, 0, 0, 0.5);*/
   cursor: pointer;
 }
 
