@@ -40,3 +40,24 @@ if(number < 10){
 
     return number;
   }
+
+
+  function toYellow(){
+
+    document.getElementById("clock").style.color = "yellow";
+  }
+
+  function toBlack(){
+
+    document.getElementById("clock").style.color = "black";
+  }
+
+  function toBlue(){
+
+    document.getElementById("clock").style.color = "blue";
+  }
+
+  function toGreen(){
+
+    document.getElementById("clock").style.color = "green";
+  }

@@ -13,3 +13,12 @@
   padding: 20px;
   text-align: center;
 }
+
+footer{
+font-family: 'Kaushan Script', cursive;
+font-size: 30px;
+position: fixed;
+text-align: center;
+bottom: 30px;
+width: 100%;
+}
