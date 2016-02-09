@@ -1,36 +1,26 @@
 body{
-	background-color: grey;
+	background-color: white;
 }
 footer{
-	color: white;
-	text-align: center;
+	color: black;
 	position: fixed;
-	top: 90%;
+	text-align: center;
+	top: 95%;
 	left: 50%;
 }
-button{
-	position: fixed;
-	left: 47%;
-	
-}
 .container {
-    width: 960px;
-    margin: 0 auto;
-    overflow: hidden;
+    text-align:center;
 }
 
 .box {
 	background-color: black;
-    width: 600px;
-	height: 100px;
-	padding: 30px;
-    margin: 0 auto;
-    border: 2px solid white;
     color: #fff;
+	position: relative;
+	margin: 0 auto;
 }
 
 #clock {
-    font-size: 28px;
+    font-size: 50px;
     text-align: center;
     text-shadow: 0 0 5px #00c6ff;
 }
