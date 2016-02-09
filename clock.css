@@ -1,0 +1,31 @@
+body{
+	background-color: grey;
+}
+footer{
+	color: white;
+	text-align: center;
+	position: fixed;
+	top: 90%;
+	left: 50%;
+}
+.container {
+    width: 960px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.box {
+	background-color: black;
+    width: 600px;
+	height: 100px;
+	padding: 30px;
+    margin: 0 auto;
+    border: 2px solid white;
+    color: #fff;
+}
+
+#clock {
+    font-size: 28px;
+    text-align: center;
+    text-shadow: 0 0 5px #00c6ff;
+}

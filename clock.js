@@ -29,18 +29,23 @@
 
  };
 
-//võtab aja ja kirjutab #clock elemendi sisse
+//võtab aja ja kirjutab #clock elemendi siss
 function writeDate(){
 
   var today = new Date();
 
-  var hours = addZeroBefore(today.getHours());
+  var year = today.getFullYear();
+  var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+  var month = months[today.getMonth()];
+  var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+  var day_of_week = days[today.getDay()];
+  var day = today.getDate();
+  var hours = today.getHours();
   var minutes = today.getMinutes();
   var seconds = today.getSeconds();
-  seconds = addZeroBefore(seconds);
 
-  //muudan #clock elemendi htmli
-  clock.innerHTML = hours + ':' + addZeroBefore(minutes) + ':' + seconds;
+
+clock.innerHTML = (day_of_week) + "<br>" + addZeroBefore(hours) + ":" + addZeroBefore(minutes) + ":" + addZeroBefore(seconds) + "<br>" + (day) + "." + (month) + "." + (year);
 }
 
 function addZeroBefore(number){
