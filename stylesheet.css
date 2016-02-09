@@ -1,0 +1,54 @@
+body {
+width: 320px;
+height:480px;
+width: 100%;
+
+
+}
+#clock {
+position : absolute;
+top: 50%;
+width: 100%;
+font-size : 40pt;
+font-family : verdana;
+font-weight: bold;
+text-align: center;
+
+
+}
+#color {
+top: 78%;
+margin-right: -50%;
+font-family: verdana;
+position: absolute;
+left:47%;
+
+
+
+
+}
+
+
+#background-color {
+padding-top: 50%;
+display: flex;
+align-items: center;
+justify-content: center
+}
+h4 {
+top: 80%;
+position: absolute;
+left:47%;
+
+
+}
+footer {
+position: absolute;
+top: 97%;
+
+
+
+
+}
+
+
