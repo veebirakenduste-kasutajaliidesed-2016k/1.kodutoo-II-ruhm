@@ -1,0 +1,26 @@
+body{
+	background-color: white;
+}
+footer{
+	color: black;
+	position: fixed;
+	text-align: center;
+	top: 95%;
+	left: 50%;
+}
+.container {
+    text-align:center;
+}
+
+.box {
+	background-color: black;
+    color: #fff;
+	position: relative;
+	margin: 0 auto;
+}
+
+#clock {
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 0 0 5px #00c6ff;
+}
