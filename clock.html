@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Clock</title>
+	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="container">
+		<div class="clock" id="clock">
+			<div class="btn btn--overlay"></div>
+			<div class="clock__number" id="time"></div>
+			<div class="date" id="date"></div>
+		</div>
+		<div class="overlay" id="overlay">
+			<div class="overlay__options">
+				<div class="btn btn--close">X</div>
+				<div class="schemes">
+					<a id="darkscheme" class="btn btn--scheme">Dark</a>
+					<div class="alarm">Wake me up at:
+						<input type="text" class="alarm__time--hours" placeholder="HR"/>
+						<input type="text" class="alarm__time--minutes" placeholder="MIN"/>
+					</div>
+					<h3>Priit Puru</h3>
+				</div>
+			</div>
+			<div class="overlay__alarm">
+				<a class="btn btn--alarm">TURN OFF</a>
+			</div>
+		</div>
+	</div>	
+<script src="clock.js"></script>
+</body>
+</html>

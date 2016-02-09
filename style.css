@@ -1,0 +1,219 @@
+html,
+body {
+	height: 100%;
+    width: 100%;
+    padding: 0;  
+    margin: 0; 
+	font-family: 'Raleway', sans-serif;
+	color: rgba(0, 0, 0, 0.87);
+}
+
+.container {
+	position: relative;  
+	height: 100%;
+    width: 100%;
+    background-color: #FAFAFA;
+}
+
+.clock {
+	position: absolute;
+    padding: 40px 0px 40px 0px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    width: 80%;
+	background-color: #FFFFFF;
+	font-size: 40px;
+    text-align: center;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.31);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.31);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.31);    
+}
+
+.clock__number {
+    display: inline-block;
+}
+
+.btn {
+	z-index: 1;
+    text-align: center;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.btn--overlay {
+    position: absolute;
+    top:100%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width: 56px;
+    height: 56px;
+    font-size: 40px;
+    line-height: 56px;
+    color: #FFFFFF;
+    border-radius: 56px;
+    transition: background-color 1s;
+    background:#448AFF url('ic_settings_white_24px.svg') no-repeat center;
+}
+
+.btn--overlay:hover {
+    background-color: #2962FF;
+}
+
+.btn--close {
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    top: -14px;
+    right: -14px;
+    border-radius: 28px;
+    background-color: #FF3D00;
+    line-height: 28px;
+    color: #FFFFFF;
+    font-weight: bolder;
+    font-size: 20px;
+    cursor: pointer;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.31);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.31);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.31);
+    transition: background-color 1s;
+}
+
+.btn--close:hover {
+    background-color: #DD2C00
+}
+
+.btn--scheme {
+    display: inline-block;
+    width:100%;
+    background-color: #FFFFFF;
+    text-align: center;
+    line-height: 100px;
+    z-index: 1;
+    font-size: 40px;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.btn--alarm{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 200px;
+    background-color: #F22613;
+    font-size: 40px;
+    color: white;
+    line-height: 200px;
+}
+
+.overlay {
+    position: absolute;
+	display: none;
+	width: 100%;
+    height: 100%;
+    animation: appear 0.2s ease-out;
+    background-color: rgba(0,0,0,0.31);
+}
+
+.overlay.is-visible {
+    display: block;
+}
+
+.overlay.disappear {
+    animation: disappear 0.2s ease-out;
+}
+.overlay__options{
+    display:none;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 40%;
+    height: 60%;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.31);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.31);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.31);
+}
+.overlay__options.is-visible{
+    display: block;
+}
+.overlay__alarm{
+    display: none;
+}
+.overlay__alarm.is-visible{
+    display: block;
+}
+
+.schemes {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:80%;
+}
+.schemes > h3{
+    text-align:center;
+}
+.alarm{
+    text-align:center;
+    padding-top:30px;
+}
+.alarm > input{
+    width: 35px;
+    text-align: center;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.31);
+    -moz-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.31);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.31);
+}
+/* Larger than mobile */
+@media (min-width: 100px) {
+    .btn--scheme, .btn--alarm,.clock{
+        font-size:7vw;
+    }
+    .overlay__options{
+        width:80%;
+    }
+}
+@media (min-width: 500px){
+    .overlay__options{
+        width:75%;
+    }
+}
+@media (min-width: 570px) {
+        .btn--scheme,.btn--alarm,.clock{
+        font-size:40px;
+    }
+}
+
+/*ANIMATION*/
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes disappear {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
