@@ -25,6 +25,50 @@
      }
    });
 
+bground.addEventListener('click', function(event){
+      //console.log(event.which);
+      if(event.which){
+        var back = getRandom(1, 7);
+        if (back == 1){
+			document.body.style.backgroundImage = "";
+          document.body.style.backgroundColor = "blue";
+		  document.getElementById("footer").style.color = "yellow";
+        }
+        if (back == 2){
+			document.body.style.backgroundImage = "";
+          document.body.style.backgroundColor = "red";
+		  document.getElementById("footer").style.color = "blue";
+        }
+        if (back == 3){
+		  document.body.style.backgroundImage = "url(boo.png)";
+		  document.getElementById("footer").style.color = "white";
+        }
+        if (back == 4){
+		  document.body.style.backgroundImage = "";
+          document.body.style.backgroundColor = "yellow";
+		  document.getElementById("footer").style.color = "black";
+        }
+        if (back == 5){
+		  document.body.style.backgroundImage = "";	
+          document.body.style.backgroundColor = "green";
+		  document.getElementById("footer").style.color = "pink";
+        }
+		if (back == 6){
+			document.body.style.backgroundImage = "";
+          document.body.style.backgroundColor = "lime";
+		  document.getElementById("footer").style.color = "black";
+        }
+		if (back == 7){
+			document.body.style.backgroundImage = "";
+          document.body.style.backgroundColor = "brown";
+		  document.getElementById("footer").style.color = "white";
+        }
+      }
+    });	
+function getRandom(){
+	return Math.floor((Math.random() * 7) + 1);
+}
+	
 
 
  };

@@ -8,6 +8,11 @@ footer{
 	top: 90%;
 	left: 50%;
 }
+button{
+	position: fixed;
+	left: 47%;
+	
+}
 .container {
     width: 960px;
     margin: 0 auto;
