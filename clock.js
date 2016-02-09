@@ -16,9 +16,38 @@ window.onload = function(){
   var year = today.getFullYear();
   document.getElementById('date').innerHTML = day+'.'+months[month]+' '+year;
 
-  var randomColor = "#000000".replace(/0/g,function(){return (~~(Math.random()*16)).toString(16);});
+  window.addEventListener('keyup', function(event){
+    console.log(event.which);
+    if(event.which == 32){
 
-  clock.addEventListener('click', changeColor);
+      document.body.style.backgroundColor ='black';
+      document.body.style.textShadow ='0px 0px 15px green';
+    }
+    if(event.which == 13){
+
+      document.body.style.backgroundColor ='white';
+      document.body.style.textShadow ='0px 0px 0px green';
+    }
+    if(event.which == 38 ){
+
+      //document.body.style.backgroundColor ='white';
+      document.body.style.fontSize ='2em';
+      //document.body.style.textShadow ='0px 0px 0px green';
+    }
+    if(event.which == 40 ){
+      document.body.style.fontSize ='1em';
+    }
+  });
+
+  document.getElementById("author").addEventListener("mouseenter", mouseEnter);
+  function mouseEnter() {
+      document.getElementById("author").style.color = "green";
+  }
+  document.getElementById("author").addEventListener("mouseleave", mouseLeave);
+  function mouseLeave() {
+      document.getElementById("author").style.color = "black";
+  }
+
 
 };
 
@@ -43,6 +72,6 @@ function addZeroBefore(number){
 }
 
 function changeColor(){
-  clock.style.backgroundColor =randomColor;
+  //clock.style.backgroundColor = randomColor;
   console.log('EEEEEEEEEE');
 }
