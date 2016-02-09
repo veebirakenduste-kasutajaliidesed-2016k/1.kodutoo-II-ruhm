@@ -5,6 +5,16 @@ window.onload = function() {
   var roundhour = document.getElementById("roundhour");
   var roundminute = document.getElementById("roundminute");
   var roundsecond = document.getElementById("roundsecond");
+  var varvimuutus = document.getElementById("varvimuutus");
+
+
+  clock.addEventListener("click", function(){
+      clock.style.color = "blue";
+{
+        clock.style.color = "green";
+      }
+
+    });
 
   writeDate();
 
@@ -14,7 +24,6 @@ window.onload = function() {
   }, 500);
 
 };
-
 
 function writeDate() {
 
@@ -34,7 +43,6 @@ function writeDate() {
   roundhour.style.transform = "rotate(" + roundhourloc + "deg)";
   roundclock.addEventListener("click", function(){
   roundclock.style.display = "none"});
-
 }
 
 
@@ -53,4 +61,5 @@ setInterval(function () {
     document.getElementById('hours').style.width = ((now.getHours() / 24) * 100) + 'px';
     document.getElementById('minutes').style.width = ((now.getMinutes() / 60) * 100) + 'px';
     document.getElementById('seconds').style.width = ((now.getSeconds() / 60) * 100) + 'px';
+
 }, 1000);
