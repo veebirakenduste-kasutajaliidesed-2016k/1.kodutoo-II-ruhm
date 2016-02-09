@@ -34,11 +34,25 @@ return number;
 }
 
 
+
+
+function fontSize(){
+
+  time = document.getElementById('clock').offsetWidth/4;
+
+  document.getElementById("clock").style.fontSize = time + "pt";
+
+}
+
+window.addEventListener("click", fontSize);
+
+
 window.addEventListener('keypress', function(event){
 
      if(event.keyCode == 32){
        clock.style.color = "red";
 
      }
+
 
    });
