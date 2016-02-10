@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
+  <link rel="stylesheet" type="text/css" href="clock_anton.css">
+  <meta charset="UTF-8">
+  <title>Clock</title>
+  <script src="clock_anton.js"></script>
+</head>
+<body>
+  <h1>Anton Mesila</h1>
+
+  <div id="clock">
+  </div>
+
+  <header>
+    <div id="color">
+      <h3>Change color:</h3>
+        <button class="btn btn-success" id="button" onclick="ColorToGreen()">Green</button>
+        <button class="btn btn-danger" id="button" onclick="ColorToRed()">Red</button>
+        <button class="btn btn-warning" id="button" onclick="ColorToOrange()">Orange</button>
+        <button class="btn btn-info" id="button" onclick="ColorToLightBlue()">Blue</button>
+    </div>
+  <br>
+    <div id="size">
+      <h3>Change size:</h3>
+        <button id="button" class="btn btn-primary btn-lg" onclick="txtLarge()">Large</button>
+        <button id="button" class="btn btn-primary btn-md" onclick="txtMedium()">Medium</button>
+        <button id="button"  class="btn btn-primary btn-sm"onclick="txtSmall()">Small</button>
+    </div>
+  </header>
+</body>
+</html>
