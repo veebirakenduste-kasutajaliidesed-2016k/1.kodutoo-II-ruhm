@@ -19,7 +19,7 @@ function writeDate(){
   var seconds = today.getSeconds();
   seconds = addZeroBefore(seconds);
 
-  clock.innerHTML = hours + ':' + addZeroBefore(minutes) + ':' + seconds;
+  clock.innerHTML ="Current time: </br>" + hours + ':' + addZeroBefore(minutes) + ':' + seconds;
 }
 
 function addZeroBefore(number){
@@ -28,4 +28,35 @@ function addZeroBefore(number){
     number = "0" + number;
   }
   return number;
+}
+
+/*--------------------------------------------*/
+function txtLarge() {
+     document.getElementById("clock").style.fontSize = "150px";
+ }
+ function txtMedium() {
+     document.getElementById("clock").style.fontSize = "70px";
+ }
+ function txtSmall() {
+     document.getElementById("clock").style.fontSize = "30px";
+ }
+
+function ColorToGreen(){
+
+  document.getElementById("clock").style.color = "green";
+}
+
+function ColorToRed(){
+
+  document.getElementById("clock").style.color = "red";
+}
+
+function ColorToOrange(){
+
+  document.getElementById("clock").style.color = "orange";
+}
+
+function ColorToLightBlue(){
+
+  document.getElementById("clock").style.color = "blue";
 }
