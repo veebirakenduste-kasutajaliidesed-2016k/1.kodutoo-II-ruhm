@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="clock.css">
+  <meta charset="UTF-8">
+  <title>Clock</title>
+  <script src="clock.js"></script>
+</head>
+<body>
+  <center>
+<img src="images.jpg" class="img-circle" alt="Cinque Terre">
+<div id="clock"></div>
+<footer>Vitali Maksimov</footer>
+<div id="colorPicker">
+<p>Muuda värvi: </p>
+<button class="btn btn-danger" onclick="toRed()">Punane</button>
+<button class="btn btn-warning" onclick="toYellow()">Kollane</button>
+<button class="btn btn-primary" onclick="toBlue()">Sinine</button>
+<button class="btn btn-success" onclick="toGreen()">Roheline</button>
+</div>
+<div id="changeSize">
+  <p>Muuda suurust: </p>
+<button type="button" onclick="textBig()" class="btn btn-primary btn-lg">Suur</button>
+<button type="button" onclick="textMedium()"class="btn btn-primary btn-md">Tavaline</button>
+<button type="button" onclick="textSmall()" class="btn btn-primary btn-sm">Väike</button>
+</div>
+</center>
+</body>
+</html>
