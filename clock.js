@@ -35,9 +35,15 @@ function writeDate(){
   var minutes = today.getMinutes();
   var seconds = today.getSeconds();
   seconds = addZeroBefore(seconds);
+  // day, mount, year.
+  var day = addZeroBefore(today.getDate());
+  var month = addZeroBefore(today.getMonth());
+  var year = addZeroBefore(today.getFullYear());
 
-  //muudan #clock elemendi htmli
-  clock.innerHTML = hours + ':' + addZeroBefore(minutes) + ':' + seconds;
+
+  //lisasin veel day, mounth, year.
+  //clock.innerHTML = hours + ':' + addZeroBefore(minutes) + ':' + seconds;
+  clock.innerHTML ="<br>Clock: <br/>" +  hours + ':' + minutes +  ':' + seconds + "<br>Date: <br/>" + day + "." + month + "." + year;
 }
 
 function addZeroBefore(number){
