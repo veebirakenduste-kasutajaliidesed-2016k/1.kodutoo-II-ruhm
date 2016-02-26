@@ -72,3 +72,14 @@ function glamour(){
   document.getElementById("clock").style.color = "#DDA0DD"
   document.body.style.backgroundColor = "#FF00FF"
 }
+
+//lisasin texti muutumine
+function Big() {
+    document.getElementById("clock").style.fontSize = "110px";
+}
+function Medium() {
+    document.getElementById("clock").style.fontSize = "70px";
+}
+function Small() {
+    document.getElementById("clock").style.fontSize = "45px";
+}
