@@ -24,9 +24,6 @@
        console.log('vajutasid enterit');
      }
    });
-
-
-
  };
 
 //võtab aja ja kirjutab #clock elemendi sisse
