@@ -43,7 +43,7 @@ function writeDate(){
 
   //lisasin veel day, mounth, year.
   //clock.innerHTML = hours + ':' + addZeroBefore(minutes) + ':' + seconds;
-  clock.innerHTML ="<br>Clock: <br/>" +  hours + ':' + minutes +  ':' + seconds + "<br>Date: <br/>" + day + "." + month + "." + year;
+  clock.innerHTML ="<br>Clock</br>" +  hours + ':' + minutes +  ':' + seconds + "<br>Date</br>" + day + "." + month + "." + year;
 }
 
 function addZeroBefore(number){
@@ -54,3 +54,15 @@ function addZeroBefore(number){
 
   return number;
 }
+
+//proovin lisada "change color nuppu"
+function COLOR(){
+
+  document.getElementById("clock").style.color = "red";
+  document.getElementById("clock").style.color = "blue";
+  document.getElementById("clock").style.color = "yellow";
+  document.getElementById("clock").style.color = "green";
+}
+
+//LISASIN BACKGROUND FUNCTION
+function color(c) {document.body.style.backgroundColor=c}
