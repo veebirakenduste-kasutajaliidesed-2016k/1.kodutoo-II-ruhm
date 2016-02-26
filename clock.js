@@ -56,13 +56,19 @@ function addZeroBefore(number){
 }
 
 //proovin lisada "change color nuppu"
-function COLOR(){
+function day(){
+    document.getElementById("clock").style.color = "black"
+    document.body.style.backgroundColor = "white"
 
-  document.getElementById("clock").style.color = "red";
-  document.getElementById("clock").style.color = "blue";
-  document.getElementById("clock").style.color = "yellow";
-  document.getElementById("clock").style.color = "green";
+}
+function night(){
+
+    document.getElementById("clock").style.color = "white"
+    document.body.style.backgroundColor = "black"
 }
 
-//LISASIN BACKGROUND FUNCTION
-function color(c) {document.body.style.backgroundColor=c}
+function glamour(){
+  document.getElementById("clock").style.color = "#DDA0DD"
+  document.getElementById("clock").style.color = "#DDA0DD"
+  document.body.style.backgroundColor = "#FF00FF"
+}
