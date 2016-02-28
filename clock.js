@@ -83,3 +83,20 @@ function Medium() {
 function Small() {
     document.getElementById("clock").style.fontSize = "45px";
 }
+
+
+//PROOV
+function getElem(elem) {
+   var elems = elem.getElementsByTagName('div');
+   var first_el = elems[0];
+
+   if(first_el.getAttribute('active') == undefined || first_el.getAttribute('active') == '0') {
+      first_el.style.color = 'red';
+      first_el.setAttribute('active', '1');
+   }
+   else {
+      first_el.style.color = 'blue';
+      first_el.setAttribute('active', '0');
+   }
+
+}
