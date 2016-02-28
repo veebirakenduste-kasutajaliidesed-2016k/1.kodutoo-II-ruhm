@@ -26,10 +26,24 @@
   <button class="btn btn-primary" onclick="Small()">Small</button>
 
   <button class="btn btn-primary"
-  onclick="document.getElementById('demo').innerHTML = Date()">Date and Time</button>
-
+  onclick="document.getElementById('demo').innerHTML = Date()">Date and Time.</button>
   <p id="demo"></p>
 
+  <button class="btn btn-primary" onclick="soundClick()">sound</button>
+  <audio src="click.mp3" autoplay="autoplay"></audio>
+
+
+  <form id="vForm"> 
+    Data and time: <br />
+  <input type="text"name="vDay" id="vDay" size="1"  value="" /> /
+  <input type="text"name="vMonth" id="vMonth" size="1"  value="" /> /
+  <input type="text"name="vYear" id="vYear" size="1"  value="" /> <br />
+
+  <input type="text"name="vHour" id="vHour" size="1"  value="" /> :
+  <input type="text"name="vMin" id="vMin" size="1"  value="" />
+
+  <input type="submit"value="Установить"id="my_button" />
+</form>
 
   <center/>
 </body>
