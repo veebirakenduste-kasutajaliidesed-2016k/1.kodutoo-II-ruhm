@@ -1,0 +1,57 @@
+p{
+  text-align: center;
+  font-size: 25px;
+  font-family: cursive;
+  font-style: italic;
+  color: red;
+}
+
+#clock{
+  font-size: 80px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: my font;
+  border: 6px solid black;
+  border-radius: 6px;
+  color: FFCCFF;
+  background-color: rgb(40,40,40);
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition-duration: 2s;
+}
+
+#clock:hover{
+  color: #EE82EE;
+  background-color: #FFE4E1;
+}
+
+
+
+
+footer{
+	font-size: 30px;
+    position: fixed;
+	text-align: center;
+	bottom: 30px;
+	width: 100%;
+}
+
+
+button{
+	
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  background-color: yellow;
+}
+
+@font-face{
+  font-family: my font;
+  src: url("digital-7.ttf");
+}
