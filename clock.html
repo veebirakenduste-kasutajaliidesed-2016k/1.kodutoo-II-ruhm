@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<script src="clock.js"></script>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" >
+  <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="clock.html">
+  <meta charset="UTF-8">
+  <title>Clock</title>
+
+</head>
+<body>
+  <center>
+  <h1>Clock&Date</h1>
+  <h2><div id="clock"></div><br></h2>
+  <p>Vitali Maksimov</p>
+  <img src="images.jpg" class="img-circle" alt="Cinque Terre">
+  <p class="text-danger">clock color muutumine</p>
+  <button class="btn" onclick="day()">Day</button>
+  <button class="btn" onclick="night()">Night</button>
+  <button class="btn btn-danger" onclick='glamour()'>Glamour mode</button>
+  <br>
+  <p class="text-danger">Teksti muutumine</p>
+  <button class="btn btn-primary" onclick="Big()">Big</button>
+  <button class="btn btn-primary" onclick="Medium()">Medium</button>
+  <button class="btn btn-primary" onclick="Small()">Small</button>
+
+  <button class="btn btn-primary"
+  onclick="document.getElementById('demo').innerHTML = Date()">Date and Time.</button>
+  <p id="demo"></p>
+
+  <button class="btn btn-primary" onclick="soundClick()">sound</button>
+  <audio src="click.mp3" autoplay="autoplay"></audio>
+
+  <center/>
+</body>
+</html>
