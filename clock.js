@@ -57,23 +57,18 @@ function addZeroBefore(number){
 
 //proovin lisada "change color nuppu"
 function day(){
-    document.getElementById("clock").style.color = "black"
-    document.body.style.backgroundColor = "white"
+
+	document.getElementById("clock").style.color = "black";
+    document.body.style.backgroundColor = "white";
 
 }
+
 function night(){
 
-    document.getElementById("clock").style.color = "white"
-    document.body.style.backgroundColor = "black"
+    document.getElementById("clock").style.color = "white";
+    document.body.style.backgroundColor = "black";
+}
 
-    var image = document.getElementById('myImage');
-    if (document.body.style.backgroundColor = "white") {
-        document.getElementById("clock").style.color = "black";
-    } else {
-        document.getElementById("clock").style.color = "white";
-    }
-}
-}
 
 function glamour(){
   document.getElementById("clock").style.color = "#DDA0DD"
@@ -85,6 +80,7 @@ function glamour(){
 function Big() {
     document.getElementById("clock").style.fontSize = "110px";
 }
+
 function Medium() {
     document.getElementById("clock").style.fontSize = "70px";
 }
@@ -93,7 +89,7 @@ function Small() {
 }
 
 function style(){
-    document.getElementById("clock").style.color = "black"
+    document.getElementById("clock").style.color = "black";
 }
 
 function soundClick() {
@@ -101,17 +97,3 @@ function soundClick() {
   audio.src = 'click.mp3'; // Указываем путь к звуку "клика"
   audio.autoplay = true; // Автоматически запускаем
 }
-
-var mySubmit= document.getElementById("my_button";  //выбираем кнопку по id
-
-functionvForm(eventObject) {
-    var vDay = eventObject.vDay.value; // день
-    var vMonth = eventObject.vMonth.value -1;// месяц
-    var vYear = eventObject.vYear.value; // год
-
-    var vHour = eventObject.vHour.value;// час
-    var vMin = eventObject.vMin.value;// минута
-    var vDate = vYear,vMonth,vDay,vHour,vMin,0;// параметр для объекта Date
-    return vDate;
-}
-mySubmit.onclick = vForm(); //при клике на кнопку, значенияформы присваиваются соответствующим переменным
