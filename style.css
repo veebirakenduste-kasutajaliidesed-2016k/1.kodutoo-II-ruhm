@@ -1,0 +1,37 @@
+body{
+  width: 100%;
+  length: 100%;
+  background-color:yellow;
+}
+
+p
+{
+  padding:0px;
+  margin:0px;
+}
+#datetime
+{
+  margin-top: auto;
+  margin-bottom:auto;
+}
+
+#date
+{
+  font-weight: bold;
+  font-size: 100%;
+  text-align: center;
+  text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
+}
+
+#clock
+{
+  font-weight: bold;
+  font-size: 100%;
+  text-align: center;
+  text-shadow: -3px 0 white, 0 3px white, 3px 0 white, 0 -3px white;
+}
+
+#font
+{
+  postion:fixed;
+}
