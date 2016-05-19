@@ -9,8 +9,9 @@ body {
     display: table-cell;
     vertical-align: middle;
 }
+#play{position: absolute;}
+#mute{position: absolute;}
 #clock{font-size: 1000%; font-weight: bold;}
 #author{position: fixed;
 right: 0;
 bottom: 0;}
-#music{visibility: hidden;}
