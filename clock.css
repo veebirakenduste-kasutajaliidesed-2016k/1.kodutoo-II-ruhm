@@ -1,0 +1,37 @@
+
+
+body {
+	background: rgb(0,0,0);
+}
+div{
+box-shadow: 10px 10px 7px rgba(0, 0, 0, 0.5);
+}
+.clock{
+height: 30%;
+width: 30%;
+text-align: center;
+top: 50%;
+position: absolute;
+transform: translateY(-50%);
+font-size: 35px;
+
+
+font-family: 'Open Sans Condensed', sans-serif;
+background-color: white;
+}
+.hours, .minutes, .seconds{
+display: inline-block;
+margin-left: 5px;
+margin-right: 5px;
+margin-bottom: 0;
+padding-top: 3%;
+font-size: 65px;
+
+}
+.days, .months, .years{
+display: inline-block;
+margin-left: 5px;
+margin-right: 5px;
+font-size: 30px;
+margin-top: 0;
+}
