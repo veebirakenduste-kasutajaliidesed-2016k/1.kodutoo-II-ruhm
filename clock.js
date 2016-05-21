@@ -44,8 +44,8 @@ $(document).ready(function(){
 function makeNewPosition(){
 
     // Get viewport dimensions (remove the dimension of the div)
-    var h = $(window).height() - ($(window).height()*0.3);
-    var w = $(window).width() - ($(window).width()*0.3);
+    var h = $(window).height() - ($(window).height()*0.4);
+    var w = $(window).width() - ($(window).width()*0.4);
 
     var nh = Math.floor(Math.random() * h);
     var nw = Math.floor(Math.random() * w);
@@ -81,7 +81,7 @@ function calcSpeed(prev, next) {
 }
 
 function change(){
-$("body").css("background-color", "rgb("+Math.floor(Math.random() * (255 - 0)) + 0 + "," + Math.floor(Math.random() * (255 - 0)) + 0 + "," + Math.floor(Math.random() * (255 - 0)) + 0 + ")");
+$("body").css("background-color", "rgb("+Math.floor(Math.random() * (255 - 0)) + 0 + "," + Math.floor(Math.random() * (255 - 0)) + 0 + "," + Math.floor(Math.random() * (255 - 0)) + ")");
 
 
 }
