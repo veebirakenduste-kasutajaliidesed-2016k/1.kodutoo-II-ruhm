@@ -1,0 +1,70 @@
+.body{
+
+  background-color: rgb(255,255,255);
+
+}
+
+#clock {
+
+font-family: 'Pacifico', cursive;
+font-size: 15em;
+margin-top: 25px;
+padding-top: 25px;
+height: 100%;
+width: 100%;
+vertical-align: middle;
+text-align: center;
+color:black;
+}
+
+#date{
+
+font-family: 'Pacifico', cursive;
+font-size: 5em;
+position:relative;
+text-align:center;
+height:100%;
+width:100%;
+color:black;
+
+}
+
+#author{
+
+font-family: 'Pacifico', cursive;
+font-size: 1em;
+position:relative;
+text-align:center;
+height:100%;
+width:100%;
+color:black;
+
+}
+
+#instructions{
+
+  font-size: 0.8em;
+  color: #404040;
+  position:relative;
+
+}
+
+#btnz{
+
+  font-family: 'Pacifico', cursive;
+  font-size: 1em;
+  text-align:center;
+  position:relative;
+
+}
+
+#korvuti{
+
+  position:relative;
+  text-align: center;
+  vertical-align: middle;
+  padding-left: 527px;
+  margin-left: 100px;
+  color: #E95E01;
+
+}
