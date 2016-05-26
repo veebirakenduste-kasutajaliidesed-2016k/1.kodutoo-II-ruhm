@@ -1,0 +1,16 @@
+div{
+	font-family: digital;
+	font-size: 80px;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+}
+
+@font-face{
+	font-family: digital;
+	src: url("digital-7.ttf")
+}

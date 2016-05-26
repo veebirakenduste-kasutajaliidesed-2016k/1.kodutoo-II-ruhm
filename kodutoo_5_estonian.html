@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Kodutöö 5</title>
+		<link rel="stylesheet" type="text/css" href="harjutus_1.css">
+
+		<script type="text/javascript" src="kodutoo_5_estonian.js">
+		</script>
+
+	</head>
+
+	<body>
+		<h1>Kodutöö 5, kakskeelne rääkiv kell</h1>
+		<audio id="strike">
+			<source src="http://www.cs.tlu.ee/~rinde/media/soundid/kellaheli/kell.mp3" type="audio/mp3">
+		</audio>
+
+		<p>Kell on praegu: <span id="digiClock"></span>
+		<span id="paev"></span>
+
+		</p>
+
+		<div id="kell">
+		<img id="face" src="kell/clock_face.png" alt="Kella numbrilaud">
+		<img id="handH" src="kell/clock_hour_hand.png" class="seier" alt="Kella tunniseier">
+		<img id="handM" src="kell/clock_minute_hand.png" class="seier" alt="Kella minutiseier">
+		<img id="handS" src="kell/clock_second_hand.png" class="seier" alt="Kella sekundiseier">
+		</div>
+		<br>
+		<label><input id="kasTiliseb" type="checkbox"></input>Lööb täistunnil</label><br><br>
+		<button id="lobise">Ütle kellaaeg!</button>
+		<br>
+		<form action="http://www.tlu.ee/~kertkulp/mm2016/kodutoo_5_english.html"><input type="submit" value="Inglise Keel"></form>
+
+	</body>
+</html>
