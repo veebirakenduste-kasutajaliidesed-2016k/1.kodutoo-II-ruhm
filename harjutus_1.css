@@ -1,0 +1,125 @@
+#kell
+{
+	position: relative;
+	overflow: hidden;
+	width: 354px;
+	height: 354px;
+}
+
+#kell img
+{
+	position: absolute;
+}
+
+.seier
+{
+	left: 150px;
+}
+
+#ekraan
+{
+	width: 600px;
+	height: 400px;
+	border: 1px solid black;
+	position: relative;
+	overflow: hidden;
+}
+
+#ekraan *
+{
+	position: absolute;
+}
+
+#tagaratas
+{
+	top: 150px;
+	left: 30px;
+}
+
+#esiratas
+{
+	top: 150px;
+	left: 360px;
+}
+
+#tagaratas, #esiratas
+{
+	animation-name: goAround;
+	animation-duration: 2s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-play-state: paused;
+}
+
+#auto
+{
+	transform: scale(0.4);
+	top: 300px;
+	animation: carTrip 6s linear infinite alternate both paused;
+}
+
+.suits
+{
+	left: 40px;
+	top: 160px;
+	animation: smoking 3s ease-out infinite paused;
+}
+
+#suits2
+{
+	animation-delay: .5s;
+}
+
+#suits3
+{
+	animation-delay: 1s;
+}
+
+#suits4
+{
+	animation-delay: 1.5s;
+}
+
+#suits5
+{
+	animation-delay: 2s;
+}
+
+#suits6
+{
+	animation-delay: 2.5s;
+}
+
+#paike
+{
+	transform: scale(2);
+	left: 480px;
+	top: -40px;
+	animation: goAround 8s linear infinite paused;
+}
+
+@keyframes goAround
+{
+	0%{transform: rotate(0deg);}
+	100%{transform: rotate(360deg);}
+}
+
+@keyframes carTrip
+{
+	0%{left: -191px;}
+	100%{left: 801px;}
+}
+
+@keyframes smoking
+{
+	0%{transform: translate(0px,0px) scale(1); opacity: 1;}
+	100%{transform: translate(-200px,-150px) scale(8); opacity: .1;}
+}
+
+
+
+
+
+
+
+
